@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Playfair+Display:wght@500;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+/* Top Bar  */
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: #f35f1b;
+}
+
+.top-bar span {
+    color: #fff;
+}
+
+.top-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.top-bar li {
+    margin: 0px 5px;
+}
+
+.top-bar a {
+    color: #fff;
+}
+
+.top-bar a:hover {
+    color: #222;
+}
+
+.top-icon {
+    font-size: 27px;
+}
+
+/* Nav Bar and Logo */
+
+nav {
+    background-color: #222;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+
+}
+
+nav a:hover {
+    color: #f35f1b;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.title {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    left: 70px;
+    bottom: 10px;
+    font-size: 35px;
+    font-weight: 800;
+    color: #fff;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.logo a:hover {
+    color: #fff;
+}
+
+.logo img {
+    width: 120px;
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li {
+    padding: 15px 10px;
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.toggle {
+    font-size: 30px;
+    display: none;
+}
+
+/* Banners */
+
+.banner {
+    background-image: url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    padding: 10vw 15vw;
+    background-position: center center;
+}
+
+.heading {
+    position: relative;
+    text-align: center;
+    color: #ffff;
+    font-size: 3vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    padding: 28px;
+}
+
+.sub-heading {
+    position: relative;
+    font-size: 2vw;
+    color: #ffff;
+}
+
+.banner span {
+    text-align: center;
+    position: relative;
+}
+
+/* About */
+
+.about {
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+}
+
+.about-img {
+    margin-bottom: 10px;
+
+}
+
+.about-text {
+    text-align: center;
+}
+
+/* Services Banner */
+
+.services {
+    text-align: center;
+    background-image: url(https://img.freepik.com/free-photo/interior-light-room-with-sofa-empty-dark-blue-wall-3d-rendering_41470-3524.jpg?t=st=1655143993~exp=1655144593~hmac=f9fb0986705ceb650817e64317f993ca79c051dd2df70bfed17047ecf684b25a&w=996);
+    align-content: center;
+    text-align: center;
+    background-size: cover;
+    padding: 2em;
+    width: 100%;
+    background-position: center center;
+    margin: 0;
+    color: #fff;
+    min-height: 400px;
+}
+
+.services ion-icon {
+    color: #fff;
+    background-color: #e95f1b;
+    font-size: 6vw;
+    border-radius: 50%;
+}
+
+.services section {
+    min-height: 400px;
+}
+
+.services ion-icon:hover {
+    color: #e95f1b;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.services h3 {
+    margin-bottom: 50px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+/* Services Page */
+
+.hide {
+    display: none;
+}
+
+.info img {
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    position: relative;
+    left: 50px;
+    margin: 20px 0px;
+    padding: 20px;
+}
+
+.info ul {
+    margin-left: 46px;
+}
+
+.info h3 {
+    margin: 17px 47px;
+}
+
+.info p {
+    margin-left: 65px;
+}
+
+.info button {
+    margin-left: 59px;
+    margin-bottom: 50px;
+    padding: 8px;
+    background-color: #f35f1beb;
+}
+
+.tab ul li button:hover {
+    color: #f35f1b;
+}
+
+.tab ul {
+    list-style-type: none;
+    margin-top: 68px;
+}
+
+.tab button {
+    width: 200px;
+    height: 45px;
+    border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
+    border-top: none;
+    border-right: 1px rgba(0, 0, 0, 0.2) solid;
+    border-left: none;
+    background-color: #f7f7f7
+}
+
+.active-btn button {
+    border-left: 3px #e95f1b solid;
+    border-right: none;
+}
+
+.serv-section {
+    background-color: #f7f7f7
+}
+
+/* Latest Projects */
+
+.latest-project {
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+.slider {
+    background-color: #eaeaea;
+    height: 337px;
+}
+
+.slider-title {
+    background-color: #fff;
+}
+
+.slider-title h3 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.slider-title p {
+    text-align: center;
+    padding: 10px 50px;
+}
+
+.slick-prev {
+    color: blue;
+    background-color: #e95f1b;
+}
+
+.slick-next {
+    color: black;
+}
+
+.item {
+    margin: 0px 4px;
+}
+
+.img-thumbnail {
+    background-color: none;
+}
+
+.enquiry {
+    text-align: center;
+}
+
+.project-banner {
+    background-image: url(https://rstheme.com/products/wordpress/konstruk/wp-content/uploads/2022/04/cta_bg2.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+.discuss {
+    text-align: center;
+    padding: 5vw;
+    position: relative;
+    color: white;
+}
+
+.enquiry {
+    text-align: center;
+    padding: 6vw;
+    position: relative;
+    top: 10px;
+    color: white;
+}
+
+/*  Footer  */
+
+.footer {
+    background-color: #222;
+    width: 100%;
+    margin: auto;
+    display: flex;
+
+}
+
+.footer a {
+    text-decoration: none;
+    color: #bbbbbb;
+}
+
+.footer a:hover {
+    color: #f35f1b;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding-left: 0%;
+}
+
+.footer-col li {
+    color: #bbbbbb;
+    margin: 0px 5px;
+    padding: 11px 0px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer-col h4 {
+    color: #fff;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    align-content: center;
+    background-color: #e95f1b;
+    height: 2px;
+    box-sizing: border-box;
+    width: 80px;
+}
+
+/* Services */
+
+.service-para {
+    background-image: url('../images/plans.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+    height: 300px;
+}
+
+.services-title {
+    position: relative;
+    padding: 30px 20px;
+    top: 50px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.intro h2 {
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.intro p {
+    text-align: center;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px 40px;
+}
+
+/* Projects Page */
+
+.project-para {
+    background-image: url("https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+    height: 300px;
+}
+
+.project-title {
+    position: relative;
+    padding: 30px 20px;
+    top: 50px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.content {
+    color: #f7f7f7
+}
+
+.project-tile img {
+    width: fit-content;
+    height: 300px;
+}
+
+.view {
+    margin: 20px;
+}
+
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrapper>img {
+    object-position: center;
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.img-wrapper>.content {
+    position: absolute;
+    inset: 0;
+    font-size: 25px;
+    padding: 1rem;
+    display: flex;
+    background: rgba(53, 53, 54, 0.3);
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    width: fit-container;
+}
+
+.img-wrapper>img,
+.img-wrapper>content {
+    transition: 250ms ease-in-out;
+}
+
+.img-wrapper>.content.fade {
+    opacity: 0;
+}
+
+.img-wrapper:hover>.content.fade {
+    opacity: 1;
+}
+
+/*  Media Queries  */
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu {
+        margin-top: 15px;
+        display: none;
+    }
+
+    .menu.active,
+    .toggle {
+        display: block;
+    }
+
+    .toggle {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    .title {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu {
+        margin-top: 15px;
+        display: none;
+    }
+
+    .menu.active,
+    .toggle {
+        display: block;
+    }
+
+    .toggle {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    .project-tile img {
+        width: fit-content;
+        height: 415px;
+    }
+}
