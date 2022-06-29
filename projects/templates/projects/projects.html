@@ -30,64 +30,18 @@
 <section>
     <div class="container project-tile">
         <div class="row view">
+            {% for project in projects %}
             <div class="col-lg-4 col-md-6 img-wrapper">
-                <a href="" class="view">
-                    <img src="https://images.pexels.com/photos/209266/pexels-photo-209266.jpeg" alt="">
+                <a href="{% url 'project_detail' project.id %}" class="view">
+                    <img src="{{ project.image.url }}" alt="{{ project.name }}">
                 </a>
-                <div class="content fade">CROMWELL RD</div>
-            </div>
-            <div class="col-lg-4 col-md-6 img-wrapper">
-                <a href="" class="view">
-                    <img src="https://images.pexels.com/photos/209266/pexels-photo-209266.jpeg" alt="">
-                </a>
-                <div class="content fade">CROMWELL RD</div>
-            </div>
-            <div class="col-lg-4 col-md-6 img-wrapper">
-                <a href="" class="view">
-                    <img src="https://images.pexels.com/photos/209266/pexels-photo-209266.jpeg" alt="">
-                </a>
-                <div class="content fade">CROMWELL RD</div>
-            </div>
-        </div>
-        <div class="row view">
-            <div class="col-lg-4 col-md-6 img-wrapper">
-                <a href="" class="view">
-                    <img src="https://images.pexels.com/photos/209266/pexels-photo-209266.jpeg" alt="">
-                </a>
-                <div class="content fade">CROMWELL RD</div>
-            </div>
-            <div class="col-lg-4 col-md-6 img-wrapper">
-                <a href="" class="view">
-                    <img src="https://images.pexels.com/photos/209266/pexels-photo-209266.jpeg" alt="">
-                </a>
-                <div class="content fade">CROMWELL RD</div>
-            </div>
-            <div class="col-lg-4 col-md-6 img-wrapper">
-                <a href="" class="view">
-                    <img src="https://images.pexels.com/photos/209266/pexels-photo-209266.jpeg" alt="">
-                </a>
-                <div class="content fade">CROMWELL RD</div>
-            </div>
-        </div>
-        <div class="row view">
-            <div class="col-lg-4 col-md-6 img-wrapper">
-                <a href="" class="view">
-                    <img src="https://images.pexels.com/photos/209266/pexels-photo-209266.jpeg" alt="">
-                </a>
-                <div class="content fade">CROMWELL RD</div>
-            </div>
-            <div class="col-lg-4 col-md-6 img-wrapper">
-                <a href="" class="view">
-                    <img src="https://images.pexels.com/photos/209266/pexels-photo-209266.jpeg" alt="">
-                </a>
-                <div class="content fade">CROMWELL RD</div>
-            </div>
-            <div class="col-lg-4 col-md-6 img-wrapper">
-                <a href="" class="view">
-                    <img src="https://images.pexels.com/photos/209266/pexels-photo-209266.jpeg" alt="">
-                </a>
-                <div class="content fade">CROMWELL RD</div>
-            </div>
+                <div class="content fade">
+                   <p> {{ project.name }}</p>
+                   
+                </div>
+                <p>{{ project.description }}</p>
+            </div> 
+            {% endfor %}
         </div>
     </div>
 </section>
