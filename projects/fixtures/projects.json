@@ -1,9 +1,13 @@
 [{
     "model": "projects.project",
     "fields": {
-        "title": "Cromwell Road",
+        "name": "Cromwell Road",
         "description": "We do internal and external refrubishments",
-        "job_details": ["Longevity", "Resale Value", "Street Appeal", "New Home Feel"],
-        "image_source": "https://images.pexels.com/photos/11847042/pexels-photo-11847042.jpeg"
+        "job_details": "Rear Extension",
+        "job_details1": "Loft Extension",
+        "job_details2": "Side Extension",
+        "job_details3": "Bifolding Doors",
+        "image": "logo1.jpeg",
+        "image1": "plans.jpeg"
     }
 }]
