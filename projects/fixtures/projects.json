@@ -1,0 +1,9 @@
+[{
+    "model": "projects.project",
+    "fields": {
+        "title": "Cromwell Road",
+        "description": "We do internal and external refrubishments",
+        "job_details": ["Longevity", "Resale Value", "Street Appeal", "New Home Feel"],
+        "image_source": "https://images.pexels.com/photos/11847042/pexels-photo-11847042.jpeg"
+    }
+}]
