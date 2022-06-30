@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+{% block content%}
+
+<div class="service-para">
+    <div>
+        <div class="container flex-center text-center">
+            <div class="row">
+                <div class="col-md-12 col-xl-8 services-title mx-auto">
+                    <h1 class="display-3 font-weight-bold " data-wow-delay="0.3s">Services</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section>
+    <div class="container">
+        <hr>
+        <div class="intro">
+            <h2>Our Services</h2>
+            <p>We offer a range of services to suit all needs. Wether it's a refurbishment or a full build of an
+                extension
+                or
+                loft conversion. We aim for the best quality of service in all we do. Below you can read more into the
+                services
+                we offer and find the one which is right for you. Feel free to contact us either via telephone email or
+                fill
+                in
+                the contact form along with any plans or drawings for a quotation.</p>
+        </div>
+        <hr>
+    </div>
+</section>
+
+<section class="serv-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-12  tab">
+                <ul>
+                    <li class="active-btn" onclick="showInfo(0, 'info')">
+                        <button>Refrubishments</button>
+                    </li>
+                    <li class="" onclick="showInfo(1)">
+                        <button>Extensions</button>
+                    </li>
+                    <li class="" onclick="showInfo(2)">
+                        <button>Loft Conversions</button>
+                    </li>
+                    <li class="" onclick="showInfo(3)">
+                        <button>Chimney Removals</button>
+                    </li>
+                    <li class="" onclick="showInfo(4)">
+                        <button>Waste Removals</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-9 col-sm-12">
+                <div class="info">
+                    <div>
+                        <img src="{{ service_data[0]['image_source'][1] }}" class="img-fluid" alt="">
+                        <img src="{{ service_data[0]['image_source'][0] }}" class="img-fluid" alt="">
+                    </div>
+                    <h3>{{ service_data[0]["title"] }}</h3>
+                    <div>
+                        <p>{{ service_data[0]["description"] }}</p>
+                        <ul>
+                            <li>{{ service_data[0]["benefits"][0] }}</li>
+                            <li>{{ service_data[0]["benefits"][1] }}</li>
+                            <li>{{ service_data[0]["benefits"][2] }}</li>
+                            <li>{{ service_data[0]["benefits"][3] }}</li>
+                        </ul>
+                        <button class="btn btn-large">Request a Quote</button>
+                    </div>
+                </div>
+                <div class="info hide">
+                    <div>
+                        <img src="{{ service_data[1]['image_source'][1] }}" class="img-fluid" alt="">
+                        <img src="{{ service_data[1]['image_source'][0] }}" class="img-fluid" alt="">
+                    </div>
+                    <h3>{{ service_data[1]["title"] }}</h3>
+                    <div>
+                        <p>{{ service_data[1]["description"] }}</p>
+                        <ul>
+                            <li>{{ service_data[1]["benefits"][0] }}</li>
+                            <li>{{ service_data[1]["benefits"][1] }}</li>
+                            <li>{{ service_data[1]["benefits"][2] }}</li>
+                            <li>{{ service_data[1]["benefits"][3] }}</li>
+                        </ul>
+                        <button>Request a Quote</button>
+                    </div>
+                </div>
+                <div class="info hide">
+                    <div>
+                        <img src="{{ service_data[2]['image_source'][1] }}" class="img-fluid" alt="">
+                        <img src="{{ service_data[2]['image_source'][0] }}" class="img-fluid" alt="">
+                    </div>
+                    <h3>{{ service_data[2]["title"] }}</h3>
+                    <div>
+                        <p>{{ service_data[2]["description"] }}</p>
+                        <ul>
+                            <li>{{ service_data[2]["benefits"][0] }}</li>
+                            <li>{{ service_data[2]["benefits"][1] }}</li>
+                            <li>{{ service_data[2]["benefits"][2] }}</li>
+                            <li>{{ service_data[2]["benefits"][2] }}</li>
+                        </ul>
+                        <button>Request a Quote</button>
+                    </div>
+                </div>
+                <div class="info hide">
+                    <div>
+                        <img src="{{ service_data[3]['image_source'][1] }}" class="img-fluid" alt="">
+                        <img src="{{ service_data[3]['image_source'][0] }}" class="img-fluid" alt="">
+                    </div>
+                    <h3>{{ service_data[3]["title"] }}</h3>
+                    <div>
+                        <p>{{ service_data[3]["description"] }}</p>
+                        <ul>
+                            <li>{{ service_data[3]["benefits"][0] }}</li>
+                            <li>{{ service_data[3]["benefits"][1] }}</li>
+                            <li>{{ service_data[3]["benefits"][2] }}</li>
+                            <li>{{ service_data[3]["benefits"][3] }}</li>
+                        </ul>
+                        <button>Request a Quote</button>
+                    </div>
+                </div>
+                <div class="info hide">
+                    <div>
+                        <img src="{{ service_data[4]['image_source'][1] }}" class="img-fluid" alt="">
+                        <img src="{{ service_data[4]['image_source'][0] }}" class="img-fluid" alt="">
+                    </div>
+                    <h3>{{ service_data[4]["title"] }}</h3>
+                    <div>
+                        <p>{{ service_data[4]["description"] }}</p>
+                        <ul>
+                            <li>{{ service_data[4]["benefits"][0] }}</li>
+                            <li>{{ service_data[4]["benefits"][1] }}</li>
+                            <li>{{ service_data[4]["benefits"][2] }}</li>
+                            <li>{{ service_data[4]["benefits"][3] }}</li>
+                        </ul>
+                        <button>Request a Quote</button>
+                    </div>
+                </div>
+                <div>
+                </div>
+            </div>
+</section>
+{% endblock %}
