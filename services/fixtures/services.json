@@ -1,0 +1,86 @@
+[{
+        "model": "services.service",
+        "fields": {
+            "title": "Refurbishments",
+            "description": "We do internal and external refrubishments",
+            "benefits": "Longevity",
+            "benefits1": "Resale Value",
+            "benefits2": "Street Appeal",
+            "benefits3": "New Home Feel",
+            "benefits4": "",
+            "benefits5": "",
+            "benefits6": "",
+            "benefits7": "",
+            "image": "https://images.pexels.com/photos/11847042/pexels-photo-11847042.jpeg",
+            "image1": "https://images.pexels.com/photos/10970424/pexels-photo-10970424.jpeg",
+        }
+    },
+    {
+        "model": "services.service",
+        "fields": {
+            "title": "Extensions",
+            "description": "We are experienced in rear and side extensions and even porches. Extensions can make a house a home and provide that much wanted open plan living space.",
+            "benefits": "dream kitchen",
+            "benefits1": "Resale Value",
+            "benefits2": "more living space",
+            "benefits3": "open plan living",
+            "benefits4": "",
+            "benefits5": "",
+            "benefits6": "",
+            "benefits7": "",
+            "image": "static/images/logo.jpeg",
+            "image1": "static/images/logo1.jpg"
+        }
+    },
+    {
+        "model": "services.service",
+        "fields": {
+            "title": "Loft Conversion",
+            "description": "We have vast experience in loft extensions, when you need that extra spare bedroom or that needed toilet/shower upstairs.",
+            "benefits": "Longevity",
+            "benefits1": "Resale Value",
+            "benefits2": "additional bathroom",
+            "benefits3": "additional bedroom",
+            "benefits4": "",
+            "benefits5": "",
+            "benefits6": "",
+            "benefits7": "",
+            "image": "plans.jpeg",
+            "image1": ""
+        }
+    },
+    {
+        "model": "services.service",
+        "fields": {
+            "title": "Chimney Removals",
+            "description": "Our dedicated team has perfected the art of removing those ancient chimneys that are taking up space.",
+            "benefits": "Cleaner room",
+            "benefits1": "modern space",
+            "benefits2": "warmer house",
+            "benefits3": "More Space",
+            "benefits4": "",
+            "benefits5": "",
+            "benefits6": "",
+            "benefits7": "",
+            "image": "plans.jpeg",
+            "image1": ""
+        }
+    },
+    {
+        "model": "services.service",
+        "fields": {
+            "title": "Waste Removal",
+            "description": "We also offer waste removals. our dedicated team will remove all your unwatnted furtniture/scrap or rubble. Call now to book. ",
+            "benefits": "Scrap metal",
+            "benefits1": "Rubble",
+            "benefits2": "furniture",
+            "benefits3": "Moving",
+            "benefits4": "",
+            "benefits5": "",
+            "benefits6": "",
+            "benefits7": "",
+            "image": "plans.jpeg",
+            "image1": ""
+            }
+    }
+]

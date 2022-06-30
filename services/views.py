@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def services(request):
+    """ View to return services page """
+    return render(request, 'services/services.html')
