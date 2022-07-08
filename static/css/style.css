@@ -397,7 +397,7 @@ nav a:hover {
 /* Services */
 
 .service-para {
-    background-image: url('../images/plans.jpeg');
+    background-image: url('/media/plans.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
