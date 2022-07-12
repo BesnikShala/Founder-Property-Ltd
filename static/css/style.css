@@ -423,8 +423,8 @@ nav a:hover {
 .intro p {
     text-align: center;
     font-size: 17px;
-    width: 100%;
     padding: 10px 40px;
+
 }
 
 /* Projects Page */
@@ -445,6 +445,24 @@ nav a:hover {
     margin-top: 20px;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+.project-details {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.detail-list {
+    list-style: none;
+}
+
+
+.project-img img {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
 }
 
 .content {
@@ -500,6 +518,8 @@ nav a:hover {
 .img-wrapper:hover>.content.fade {
     opacity: 1;
 }
+
+
 
 /*  Media Queries  */
 
