@@ -461,7 +461,7 @@ nav a:hover {
 
 .project-img img {
     width: 100%;
-    margin: 10px;
+    margin: 10px 0px;
     padding: 10px;
 }
 
@@ -472,6 +472,12 @@ nav a:hover {
 .project-tile img {
     width: fit-content;
     height: 300px;
+}
+
+.popup-gallery a img {
+    height: 300px;
+    width: 300px;
+    margin: 10px;
 }
 
 .view {
