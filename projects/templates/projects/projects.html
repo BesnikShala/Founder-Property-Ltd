@@ -36,12 +36,13 @@
             <div class="col-lg-4 col-md-6 img-wrapper">
                 <a href="{% url 'project_detail' project.id %}" class="view">
                     <img src="{{ project.image.url }}" alt="{{ project.name }}">
-                </a>
+                
                 <div class="content fade">
                    <p> {{ project.name }}</p>
                    
                 </div>
                 <p>{{ project.description }}</p>
+                </a>
             </div> 
             {% endfor %}
         </div>

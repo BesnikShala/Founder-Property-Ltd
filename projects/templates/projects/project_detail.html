@@ -18,165 +18,171 @@
                 <div class="project-img">
                     <img src="{{ project.image.url }}" alt="{{ project.name }}">
                 </div>
+                <div class="popup-gallery">
+                    <a href="{{ project.image1.url }}" title="The Cleaner"><img src="{{ project.image1.url }}"></a>
+                    {% if project.image2 %}
+                    <a href="{{ project.image2.url }}" title="Winter Dance"><img src="{{ project.image2.url }}"></a>
+                    {% else %}
+                    <a href="">
+                        <img src="" display="none" alt="{{ product.name }}" class="d-none card-img-top img-fluid">
+                    </a>
+                    {% endif %}
+                    {% if project.image3 %}
+                    <a href="{{ project.image3.url }}" title="Winter Dance"><img src="{{ project.image3.url }}"></a>
+                    {% else %}
+                    <a href="">
+                        <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
+                            class="d-none card-img-top img-fluid">
+                    </a>
+                    {% endif %}
+                    {% if project.image4 %}
+                    <a href="{{ project.image4.url }}" title="Winter Dance"><img src="{{ project.image4.url }}"></a>
+                    {% else %}
+                    <a href="">
+                        <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
+                            class="d-none card-img-top img-fluid">
+                    </a>
+                    {% endif %}
+                    {% if project.image5 %}
+                    <a href="{{ project.image5.url }}" title="Winter Dance"><img src="{{ project.image5.url }}"></a>
+                    {% else %}
+                    <a href="">
+                        <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
+                            class="d-none card-img-top img-fluid">
+                    </a>
+                    {% endif %}
+                    {% if project.image6 %}
+                    <a href="{{ project.image6.url }}" title="Winter Dance"><img src="{{ project.image6.url }}"></a>
+                    {% else %}
+                    <a href="">
+                        <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
+                            class="d-none card-img-top img-fluid">
+                    </a>
+                    {% endif %}
+                    {% if project.image7 %}
+                    <a href="{{ project.image7.url }}" title="Winter Dance"><img src="{{ project.image7.url }}"></a>
+                    {% else %}
+                    <a href="">
+                        <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
+                            class="d-none card-img-top img-fluid">
+                    </a>
+                    {% endif %}
+                    {% if project.image8 %}
+                    <a href="{{ project.image8.url }}" title="Winter Dance"><img src="{{ project.image8.url }}"></a>
+                    {% else %}
+                    <a href="">
+                        <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
+                            class="d-none card-img-top img-fluid">
+                    </a>
+                    {% endif %}
+                    {% if project.image5 %}
+                    <a href="{{ project.image9.url }}" title="Winter Dance"><img src="{{ project.image9.url }}"></a>
+                    {% else %}
+                    <a href="">
+                        <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
+                            class="d-none card-img-top img-fluid">
+                    </a>
+                    {% endif %}
+                    {% if project.image10 %}
+                    <a href="{{ project.image10.url }}" title="Winter Dance"><img src="{{ project.image10.url }}"></a>
+                    {% else %}
+                    <a href="">
+                        <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
+                            class="d-none card-img-top img-fluid">
+                    </a>
+                    {% endif %}
+                    {% if project.image11 %}
+                    <a href="{{ project.image11.url }}" title="Winter Dance"><img src="{{ project.image11.url }}"></a>
+                    {% else %}
+                    <a href="">
+                        <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
+                            class="d-none card-img-top img-fluid">
+                    </a>
+                    {% endif %}
+                    {% if project.image12 %}
+                    <a href="{{ project.image12.url }}" title="Winter Dance"><img src="{{ project.image12.url }}"></a>
+                    {% else %}
+                    <a href="">
+                        <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
+                            class="d-none card-img-top img-fluid">
+                    </a>
+                    {% endif %}
+                    {% if project.image13 %}
+                    <a href="{{ project.image13.url }}" title="Winter Dance"><img src="{{ project.image13.url }}"></a>
+                    {% else %}
+                    <a href="">
+                        <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
+                            class="d-none card-img-top img-fluid">
+                    </a>
+                    {% endif %}
+                    {% if project.image14 %}
+                    <a href="{{ project.image14.url }}" title="Winter Dance"><img src="{{ project.image14.url }}"></a>
+                    {% else %}
+                    <a href="">
+                        <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
+                            class="d-none card-img-top img-fluid">
+                    </a>
+                    {% endif %}
+                    {% if project.image15 %}
+                    <a href="{{ project.image15.url }}" title="Winter Dance"><img src="{{ project.image15.url }}"></a>
+                    {% else %}
+                    <a href="">
+                        <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
+                            class="d-none card-img-top img-fluid">
+                    </a>
+                    {% endif %}
+                </div>
             </div>
-            <div class="col-md-2 col-sm-12">
+            <div class="col-md-4 col-sm-12">
                 <div class="project-details">
                     <h5>Project Details</h5>
                     <p>{{ project.description }}</p>
                     <ul class="detail-list">
-                        <li>{{ project.job_details }}</li>
-                        <li>{{ project.job_details1 }}</li>
-                        <li>{{ project.job_details2 }}</li>
-                        <li>{{ project.job_details3 }}</li>
-                        <li>{{ project.job_details4 }}</li>
-                        <li>{{ project.job_details5 }}</li>
-                        <li>{{ project.job_details6 }}</li>
-                        <li>{{ project.job_details7 }}</li>
-                        <li>{{ project.job_details8 }}</li>
-                        <li>{{ project.job_details9 }}</li>
-                        <li>{{ project.job_details10 }}</li>
-                        <li>{{ project.job_details11 }}</li>
-                        <li>{{ project.job_details12 }}</li>
+                        {% if project.job_details %}
+                            <li>{{ project.job_details }}</li>
+                        {% endif %}
+                        {% if project.job_details1 %}
+                            <li>{{ project.job_details1 }}</li>
+                        {% endif %}
+                        {% if project.job_details2 %}
+                            <li>{{ project.job_details2 }}</li>
+                        {% endif %}
+                        {% if project.job_details3 %}
+                            <li>{{ project.job_details3 }}</li>
+                        {% endif %}
+                        {% if project.job_details4 %}
+                            <li>{{ project.job_details4 }}</li>
+                        {% endif %}
+                        {% if project.job_details5 %}
+                            <li>{{ project.job_details5 }}</li>
+                        {% endif %}
+                        {% if project.job_details6 %}
+                            <li>{{ project.job_details6 }}</li>
+                        {% endif %}
+                        {% if project.job_details7 %}
+                            <li>{{ project.job_details7 }}</li>
+                        {% endif %}
+                        {% if project.job_details8 %}
+                            <li>{{ project.job_details8 }}</li>
+                        {% endif %}
+                        {% if project.job_details9 %}
+                            <li>{{ project.job_details9 }}</li>
+                        {% endif %}
+                        {% if project.job_details10 %}
+                            <li>{{ project.job_details10 }}</li>
+                        {% endif %}
+                        {% if project.job_details11 %}
+                            <li>{{ project.job_details11 }}</li>
+                        {% endif %}
+                        {% if project.job_details12 %}
+                            <li>{{ project.job_details12 }}</li>
+                        {% endif %}
                     </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-11">
-                <div class="popup-gallery">
-                    <a href="{{ project.image1.url }}" title="The Cleaner"><img
-                            src="{{ project.image1.url }}" 
-                            ></a>
-                        {% if project.image2 %}
-                    <a href="{{ project.image2.url }}" title="Winter Dance"><img
-                            src="{{ project.image2.url }}" 
-                            ></a>
-                        {% else %}
-                        <a href="">
-                            <img src="" display="none" alt="{{ product.name }}"
-                                class="d-none card-img-top img-fluid">
-                        </a>
-                        {% endif %}
-                        {% if project.image3 %}
-                        <a href="{{ project.image3.url }}" title="Winter Dance"><img src="{{ project.image3.url }}"
-                                  ></a>
-                        {% else %}
-                        <a href="">
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}" class="d-none card-img-top img-fluid">
-                        </a>
-                        {% endif %}
-                        {% if project.image4 %}
-                        <a href="{{ project.image4.url }}" title="Winter Dance"><img src="{{ project.image4.url }}"
-                                 ></a>
-                        {% else %}
-                        <a href="">
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
-                                class="d-none card-img-top img-fluid">
-                        </a>
-                        {% endif %}
-                        {% if project.image5 %}
-                        <a href="{{ project.image5.url }}" title="Winter Dance"><img src="{{ project.image5.url }}"
-                                 ></a>
-                        {% else %}
-                        <a href="">
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
-                                class="d-none card-img-top img-fluid">
-                        </a>
-                        {% endif %}
-                        {% if project.image6 %}
-                        <a href="{{ project.image6.url }}" title="Winter Dance"><img src="{{ project.image6.url }}"
-                                 ></a>
-                        {% else %}
-                        <a href="">
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
-                                class="d-none card-img-top img-fluid">
-                        </a>
-                        {% endif %}
-                        {% if project.image7 %}
-                        <a href="{{ project.image7.url }}" title="Winter Dance"><img src="{{ project.image7.url }}"
-                                 ></a>
-                        {% else %}
-                        <a href="">
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
-                                class="d-none card-img-top img-fluid">
-                        </a>
-                        {% endif %}
-                        {% if project.image8 %}
-                        <a href="{{ project.image8.url }}" title="Winter Dance"><img src="{{ project.image8.url }}"
-                                 ></a>
-                        {% else %}
-                        <a href="">
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
-                                class="d-none card-img-top img-fluid">
-                        </a>
-                        {% endif %}
-                        {% if project.image5 %}
-                        <a href="{{ project.image9.url }}" title="Winter Dance"><img src="{{ project.image9.url }}"
-                                 ></a>
-                        {% else %}
-                        <a href="">
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
-                                class="d-none card-img-top img-fluid">
-                        </a>
-                        {% endif %}
-                        {% if project.image10 %}
-                        <a href="{{ project.image10.url }}" title="Winter Dance"><img src="{{ project.image10.url }}"
-                                 ></a>
-                        {% else %}
-                        <a href="">
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
-                                class="d-none card-img-top img-fluid">
-                        </a>
-                        {% endif %}
-                        {% if project.image11 %}
-                        <a href="{{ project.image11.url }}" title="Winter Dance"><img src="{{ project.image11.url }}"
-                                 ></a>
-                        {% else %}
-                        <a href="">
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
-                                class="d-none card-img-top img-fluid">
-                        </a>
-                        {% endif %}
-                        {% if project.image12 %}
-                        <a href="{{ project.image12.url }}" title="Winter Dance"><img src="{{ project.image12.url }}"
-                                 ></a>
-                        {% else %}
-                        <a href="">
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
-                                class="d-none card-img-top img-fluid">
-                        </a>
-                        {% endif %}
-                        {% if project.image13 %}
-                        <a href="{{ project.image13.url }}" title="Winter Dance"><img src="{{ project.image13.url }}"
-                                 ></a>
-                        {% else %}
-                        <a href="">
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
-                                class="d-none card-img-top img-fluid">
-                        </a>
-                        {% endif %}
-                        {% if project.image14 %}
-                        <a href="{{ project.image14.url }}" title="Winter Dance"><img src="{{ project.image14.url }}"
-                                 ></a>
-                        {% else %}
-                        <a href="">
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
-                                class="d-none card-img-top img-fluid">
-                        </a>
-                        {% endif %}
-                        {% if project.image15 %}
-                        <a href="{{ project.image15.url }}" title="Winter Dance"><img src="{{ project.image15.url }}"
-                                 ></a>
-                        {% else %}
-                        <a href="">
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
-                                class="d-none card-img-top img-fluid">
-                        </a>
-                        {% endif %}
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 {% endblock %}

@@ -97,7 +97,7 @@ nav a:hover {
 
 .logo img {
     width: 120px;
-    margin-right: 10px;
+    margin-left: 15px;
 }
 
 .menu {
@@ -418,6 +418,11 @@ nav a:hover {
     font-weight: 600;
     text-align: center;
     letter-spacing: 2px;
+    font-size: 4vw;
+}
+
+.intro > hr {
+    margin-top: 30px;
 }
 
 .intro p {
@@ -448,14 +453,20 @@ nav a:hover {
 }
 
 .project-details {
-    text-align: center;
     margin: 10px;
     padding: 10px;
+    position: sticky;
+    top: 50px;
 }
 
 
 .detail-list {
-    list-style: none;
+    list-style-image: url('/media/ham.jpeg');
+    padding-left: 5px;
+}
+
+.detail-list li {
+    padding: 2px 5px;
 }
 
 
@@ -475,8 +486,8 @@ nav a:hover {
 }
 
 .popup-gallery a img {
-    height: 300px;
-    width: 300px;
+    height: 262px;
+    width: 262px;
     margin: 10px;
 }
 
