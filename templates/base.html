@@ -59,7 +59,7 @@
             <li><a href="{% url 'home' %}">Home</a></li>
             <li><a href="{% url 'services' %}">Services</a></li>
             <li><a href="{% url 'projects' %}">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
         </ul>
     </nav>
 
@@ -74,16 +74,16 @@
                     <h4>Company</h4>
                     <ul class="footer-list">
                         <li>
-                            <a href="#">Refurbishments</a>
+                            <a href="{% url 'services' %}">Refurbishments</a>
                         </li>
                         <li>
-                            <a href="#">Extensions</a>
+                            <a href="{% url 'services' %}">Extensions</a>
                         </li>
                         <li>
-                            <a href="#">Loft Conversions</a>
+                            <a href="{% url 'services' %}">Loft Conversions</a>
                         </li>
                         <li>
-                            <a href="#">Waste Removals</a>
+                            <a href="{% url 'services' %}">Chimney Removals</a>
                         </li>
                     </ul>
                 </div>
