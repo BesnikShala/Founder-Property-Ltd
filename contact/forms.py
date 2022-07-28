@@ -1,8 +1,10 @@
 from django import forms
+from .models import Customer
 
 
 class CustomerForm(forms.ModelForm):
     class Meta:
+        model = Customer
         fields = ('name', 'email', 'phone_number', 'post_code', 'message',)
 
 
@@ -17,10 +19,10 @@ class CustomerForm(forms.ModelForm):
             'email': 'Email Address',
             'phone_number': 'Phone Number',
             'message': 'Message',
-            'postcode': 'Post Code',
+            'post_code': 'Post Code',
         }
 
-        self.fields['full_name'].widget.attrs['autofocus'] = True
+        self.fields['name'].widget.attrs['autofocus'] = True
         for field in self.fields:
             if field != 'country':
                 if self.fields[field].required:
