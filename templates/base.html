@@ -7,6 +7,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords"
+            content="Chimney, Chimney Removals, Extension, Property Development, Loft Extension, Rear Extension, Side Extension, Waste Removals, Property Investment, Property Developer,  ">
     {% endblock %}
 
     <!-- CSS only -->
@@ -18,6 +20,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     {% endblock %}
 
 
@@ -45,7 +48,9 @@
     <!-- Nav Bar -->
     <nav>
         <div class="logo">
-            <img src="../media/logo1.jpeg" alt="Company Logo">
+            <a href="{% url 'home' %}">
+                <img src="../media/logo1.jpeg" alt="Company Logo">
+            </a>
         </div>
         <div class="title ">
             Founder Property
@@ -118,6 +123,7 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="../static/js/script.js"></script>
 
 

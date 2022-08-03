@@ -11,6 +11,12 @@ $(function () {
     })
 });
 
+// AOS Animate on scroll 
+
+AOS.init({
+    duration: 1000
+});
+
 // Carousel Slider Function
 $(document).ready(function () {
     $('.latest-project').slick({
@@ -20,7 +26,7 @@ $(document).ready(function () {
         responsive: [{
                 breakpoint: 600,
                 settings: {
-                    arrows: false,
+                    arrows: true,
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }
