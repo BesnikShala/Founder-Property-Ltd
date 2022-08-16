@@ -1,0 +1,1 @@
+web: gunicorn founder_property.wsgi:application
