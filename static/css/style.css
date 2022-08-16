@@ -121,6 +121,24 @@ nav a:hover {
 
 /* Banners */
 
+.banner::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    z-index: 0;
+}
+
+.banner > * {
+    z-index: 10;
+    position: relative;
+}
+
 .banner {
     background-image: url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-repeat: no-repeat;
@@ -128,6 +146,11 @@ nav a:hover {
     min-height: 400px;
     padding: 10vw 15vw;
     background-position: center center;
+    position: relative;
+}
+
+.banner ul li {
+    list-style-type: none;
 }
 
 .heading {
@@ -135,7 +158,6 @@ nav a:hover {
     text-align: center;
     color: #ffff;
     font-size: 3vw;
-    background-color: rgba(0, 0, 0, 0.5);
     font-weight: 400;
     padding: 28px;
 }
@@ -170,9 +192,10 @@ nav a:hover {
 
 /* Services Banner */
 
+
 .services {
     text-align: center;
-    background-image: url(https://img.freepik.com/free-photo/interior-light-room-with-sofa-empty-dark-blue-wall-3d-rendering_41470-3524.jpg?t=st=1655143993~exp=1655144593~hmac=f9fb0986705ceb650817e64317f993ca79c051dd2df70bfed17047ecf684b25a&w=996);
+    background-image: url(/media/home.jpeg);
     align-content: center;
     text-align: center;
     background-size: cover;
@@ -187,8 +210,9 @@ nav a:hover {
 .services ion-icon {
     color: #fff;
     background-color: #e95f1b;
-    font-size: 6vw;
+    font-size: 5vw;
     border-radius: 50%;
+    padding: 15px;
 }
 
 .services section {
@@ -208,16 +232,53 @@ nav a:hover {
 
 /* Services Page */
 
+.cromwell-img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+.cromwell-img p {
+    display: inline;
+}
+
+.cromwell-img2 {
+    width: 406px;
+    height: 400px;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.cromwell div p {
+    display: inline-block;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 3px 8px 8px #7c7c7c, 17px 12px 8px #e7e7e7, 18px 20px 8px #d7dcd7;
+    margin: 20px;
+    margin-top: 142px;
+
+}
+
+.cromwell div h3 {
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
 .hide {
     display: none;
 }
 
 .info img {
-    width: 300px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     text-align: center;
     position: relative;
-    left: 50px;
     margin: 20px 0px;
     padding: 20px;
 }
@@ -396,6 +457,24 @@ nav a:hover {
 
 /* Services */
 
+.service-para::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .4;
+    z-index: 0;
+}
+
+.service-para>* {
+    z-index: 10;
+    position: relative;
+}
+
 .service-para {
     background-image: url('/media/plans.jpeg');
     background-size: cover;
@@ -403,6 +482,7 @@ nav a:hover {
     background-position: bottom center;
     background-attachment: fixed;
     height: 300px;
+    position: relative;
 }
 
 .services-title {
@@ -411,14 +491,13 @@ nav a:hover {
     top: 50px;
     margin-top: 20px;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.3);
 }
 
-.intro h2 {
+.intro h3 {
     font-weight: 600;
     text-align: center;
     letter-spacing: 2px;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 .intro > hr {
@@ -432,7 +511,30 @@ nav a:hover {
 
 }
 
+.message {
+    height: 50px;
+    margin: 20px;
+}
+
 /* Projects Page */
+
+.project-para::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .4;
+    z-index: 0;
+}
+
+.project-para> * {
+    z-index: 10;
+    position: relative;
+}
 
 .project-para {
     background-image: url("https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg");
@@ -441,6 +543,7 @@ nav a:hover {
     background-position: bottom center;
     background-attachment: fixed;
     height: 300px;
+    position: relative;
 }
 
 .project-title {
@@ -449,7 +552,6 @@ nav a:hover {
     top: 50px;
     margin-top: 20px;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .project-details {
@@ -486,8 +588,8 @@ nav a:hover {
 }
 
 .popup-gallery a img {
-    height: 262px;
-    width: 262px;
+    height: 234px;
+    width: 222px;
     margin: 10px;
 }
 
@@ -537,6 +639,47 @@ nav a:hover {
 }
 
 
+/* Contact */
+
+.contact-para {
+    background-image: url('/media/skyline.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+    height: 300px;
+}
+
+.contact ion-icon {
+    color: #222;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #222;
+    font-size: 80px;
+    padding: 10px;
+}
+
+.contact-icon {
+    text-align: center;
+}
+
+.contact-section {
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.contact-image {
+    width: 80%;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+.contact-text > * {
+    text-align: center;
+
+}
+
 
 /*  Media Queries  */
 
@@ -566,49 +709,72 @@ nav a:hover {
     .title {
         display: none;
     }
-}
-
-@media screen and (max-width: 600px) {
-    nav {
-        display: block;
-        position: relative;
-        padding: 15px 20px;
-    }
-
-    .menu {
-        margin-top: 15px;
-        display: none;
-    }
-
-    .menu.active,
-    .toggle {
-        display: block;
-    }
-
-    .toggle {
-        position: absolute;
-        top: 15px;
-        right: 20px;
-    }
 
     .project-tile img {
         width: fit-content;
         height: 415px;
     }
-}
 
-test {
-        -webkit-text-size-adjust: 100%;
-        font-family: Poppins,
-        sans-serif;
-        font-size: 14px;
-        line-height: 20px;
-        box-sizing: border-box;
-        position: absolute;
-        left: 0px;
-        top: 0px;
+    .cromwell-img {
+        width: 406px;
+        height: 400px;
+        text-align: center;
+        position: relative;
+        margin-top: 20px;
+        left: 0;
+        order: 2;
+    }
+
+    .info img {
         width: 100%;
         height: 100%;
-        background-color: rgba(255, 197, 39, 0.8);
-        opacity: 0;
+        text-align: center; 
+        position: relative;
+    }
+
+    .cromwell div p {
+        margin: auto;
+        padding: 5px 8px;
+        text-align: left;
+        line-height: 30px;
+        overflow: hidden;
+        order: 2;
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .title {
+        display: none;
+    }
+
+    .info img {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        position: relative;
+        margin: 20px 0px;
+        padding: 20px;
+    }
+
+    .tab button {
+        width: 100%;
+        height: 45px;
+        border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
+        border-top: none;
+        border-right: 1px rgba(0, 0, 0, 0.2) solid;
+        border-left: none;
+        background-color: #f7f7f7
+    }
+
+    .tab ul li button:hover {
+        width: 100%;
+    }
+
+    .active-btn button {
+        border-left: 3px #e95f1b solid;
+        border-right: none;
+    }
+
 }
