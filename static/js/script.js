@@ -13,9 +13,9 @@ $(function () {
 
 // AOS Animate on scroll 
 
-AOS.init({
-    duration: 1000
-});
+// AOS.init({
+//     duration: 1000
+// });
 
 // Carousel Slider Function
 $(document).ready(function () {
