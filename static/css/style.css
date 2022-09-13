@@ -195,7 +195,7 @@ nav a:hover {
 
 .services {
     text-align: center;
-    background-image: url(/media/home.jpeg);
+    background-image: url(/media/home.jpg);
     align-content: center;
     text-align: center;
     background-size: cover;
@@ -476,7 +476,7 @@ nav a:hover {
 }
 
 .service-para {
-    background-image: url('/media/plans.jpeg');
+    background-image: url('/media/plans.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -537,7 +537,7 @@ nav a:hover {
 }
 
 .project-para {
-    background-image: url("https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg");
+    background-image: url("https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -563,7 +563,7 @@ nav a:hover {
 
 
 .detail-list {
-    list-style-image: url('/media/ham.jpeg');
+    list-style-image: url('/media/ham.jpg');
     padding-left: 5px;
 }
 
@@ -642,7 +642,7 @@ nav a:hover {
 /* Contact */
 
 .contact-para {
-    background-image: url('/media/skyline.jpeg');
+    background-image: url('/media/skyline.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
