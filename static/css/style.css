@@ -378,7 +378,7 @@ nav a:hover {
 }
 
 .project-banner {
-    background-image: url(https://rstheme.com/products/wordpress/konstruk/wp-content/uploads/2022/04/cta_bg2.jpg);
+    background-image: url(/static/media/construct.jpg);
     background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -476,7 +476,7 @@ nav a:hover {
 }
 
 .service-para {
-    background-image: url('/media/plans.jpg');
+    background-image: url('/static/media/plans.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -642,7 +642,7 @@ nav a:hover {
 /* Contact */
 
 .contact-para {
-    background-image: url('/media/skyline.jpg');
+    background-image: url('/static/media/skyline.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
