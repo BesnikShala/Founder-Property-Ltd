@@ -238,7 +238,6 @@ nav a:hover {
     text-align: center;
     position: relative;
     margin-top: 20px;
-    padding: 20px;
     vertical-align: middle;
 }
 
@@ -247,11 +246,10 @@ nav a:hover {
 }
 
 .cromwell-img2 {
-    width: 406px;
+    width: 100%;
     height: 400px;
     text-align: center;
     position: relative;
-    padding: 20px;
 }
 
 .cromwell div p {
@@ -476,7 +474,7 @@ nav a:hover {
 }
 
 .service-para {
-    background-image: url('/static/media/plans.jpg');
+    background-image: url(/static/media/plans.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -497,7 +495,7 @@ nav a:hover {
     font-weight: 600;
     text-align: center;
     letter-spacing: 2px;
-    font-size: 3vw;
+    font-size: 40px;
 }
 
 .intro > hr {
@@ -562,12 +560,12 @@ nav a:hover {
 }
 
 
-.detail-list {
-    list-style-image: url('/media/ham.jpg');
+.detail-list::marker {
     padding-left: 5px;
+    list-style-image: url(/static/media/ham.jpg);
 }
 
-.detail-list li {
+.detail-list li ::marker{
     padding: 2px 5px;
 }
 
@@ -716,7 +714,7 @@ nav a:hover {
     }
 
     .cromwell-img {
-        width: 406px;
+        width: 100%;
         height: 400px;
         text-align: center;
         position: relative;
@@ -739,6 +737,10 @@ nav a:hover {
         line-height: 30px;
         overflow: hidden;
         order: 2;
+    }
+
+    .intro h3 {
+        font-size: 20px;
     }
 }
 
