@@ -163,7 +163,7 @@ nav a:hover {
 
 .sub-heading {
     position: relative;
-    font-size: 2vw;
+    font-size: 25px;
     color: #ffff;
 }
 
@@ -182,12 +182,14 @@ nav a:hover {
 
 .about-img {
     margin-bottom: 10px;
+}
 
+.about-img img {
+    width: 56%;
 }
 
 .about-text {
     text-align: center;
-    color: white;
 }
 
 /* Services Banner */
@@ -205,6 +207,11 @@ nav a:hover {
     margin: 0;
     color: #fff;
     min-height: 400px;
+}
+
+.services>* {
+    z-index: 10;
+    position: relative;
 }
 
 .services::after {

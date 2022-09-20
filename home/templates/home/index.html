@@ -92,27 +92,16 @@
     <hr>
 </div>
 
-<section class="slider" data-aos="fade-up" data-aos-duration="1000">
-    <div class="container ">
+<section class="slider">
+    <div class="container project-tile">
         <div class="row latest-project">
-            <div class="item">
-                <img src="{% static 'media/plans.jpg' %}" class="img-thumbnail" alt="...">
+            {% for project in projects %}
+            <div class="item col-lg-4 col-md-6 img-wrapper">
+                <a href="{% url 'project_detail' project.id %}" class="img-thumbnail">
+                    <img src="{{ project.image.url }}" alt="{{ project.name }}">
+                </a>
             </div>
-            <div class="item">
-                <img src="{% static 'media/plans.jpg' %}" class="img-thumbnail" alt="...">
-            </div>
-            <div class="item">
-                <img src="{% static 'media/plans.jpg' %}" class="img-thumbnail" alt="...">
-            </div>
-            <div class="item">
-                <img src="{% static 'media/plans.jpg' %}" class="img-thumbnail" alt="...">
-            </div>
-            <div class="item">
-                <img src="{% static 'media/plans.jpg' %}" class="img-thumbnail" alt="...">
-            </div>
-            <div class="item">
-                <img src="{% static 'media/plans.jpg' %}" class="img-thumbnail" alt="...">
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
