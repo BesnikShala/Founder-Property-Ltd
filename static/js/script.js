@@ -20,13 +20,14 @@ AOS.init({
 // Carousel Slider Function
 $(document).ready(function () {
     $('.latest-project').slick({
+        prevArrow: '.arrow_prev',
+        nextArrow: '.arrow_next',
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
         responsive: [{
                 breakpoint: 600,
                 settings: {
-                    arrows: true,
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }
@@ -34,7 +35,6 @@ $(document).ready(function () {
             {
                 breakpoint: 480,
                 settings: {
-                    arrows: false,
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }
@@ -71,10 +71,7 @@ $(document).ready(function () {
             preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
         },
         image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-            titleSrc: function (item) {
-                return item.el.attr('title') + '<small>Founder Property</small>';
-            }
+            tError: 'No more images',
         }
     });
 });

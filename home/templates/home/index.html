@@ -96,12 +96,22 @@
     <div class="container project-tile">
         <div class="row latest-project">
             {% for project in projects %}
-            <div class="item col-lg-4 col-md-6 img-wrapper">
-                <a href="{% url 'project_detail' project.id %}" class="img-thumbnail">
-                    <img src="{{ project.image.url }}" alt="{{ project.name }}">
-                </a>
-            </div>
+                <div class="item col-lg-4 col-md-6 img-wrapper">
+                    <a href="{% url 'project_detail' project.id %}" >
+                        <img src="{{ project.image.url }}" alt="{{ project.name }}">
+                    </a>
+                </div>
             {% endfor %}
+        </div>
+        <div class="arrow_prev">
+            <span>
+                <ion-icon name="arrow-back-sharp"></ion-icon>
+            </span>
+        </div>
+        <div class="arrow_next">
+            <span>
+                <ion-icon name="arrow-forward-sharp"></ion-icon>
+            </span>
         </div>
     </div>
 </section>

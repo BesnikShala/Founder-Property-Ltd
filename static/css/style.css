@@ -357,7 +357,7 @@ nav a:hover {
 
 .slider {
     background-color: #eaeaea;
-    height: 337px;
+    height: 100%;
 }
 
 .slider-title {
@@ -374,13 +374,26 @@ nav a:hover {
     padding: 10px 50px;
 }
 
-.slick-prev {
-    color: blue;
-    background-color: #e95f1b;
+.arrow_prev {
+    position: relative;
+    top: -181px;
+    right: 37px;
 }
 
-.slick-next {
-    color: black;
+.arrow_prev span {
+    font-size: 25px;
+    color: #f35f1b;
+}
+
+.arrow_next {
+    position: relative;
+    top: -218px;
+    left: 1313px;
+}
+
+.arrow_next span {
+    font-size: 25px;
+    color: #f35f1b;
 }
 
 .item {
@@ -780,6 +793,11 @@ nav a:hover {
 @media screen and (max-width: 800px) {
     .title {
         display: none;
+    }
+
+    .tab {
+        flex: 0 0 auto;
+        width: 84%;
     }
 
     .info img {
