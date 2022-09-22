@@ -10,15 +10,14 @@ def contact(request):
     if request.method == "POST":
         customer_form = CustomerForm(request.POST)
         if customer_form.is_valid():
+            name = request.POST['name']
+            email = request.POST['email']
+            message = request.POST['message']
+            phone_number = request.POST['phone_number']
+            post_code = request.POST['post_code']
             subject = 'Website Enquiry'
-            body = {
-                'name': request.POST['name'],
-                'phone_number': request.POST['phone_number'],
-                'email': request.POST['email'],
-                'message': request.POST['message'],
-                'post_code': request.POST['post_code'],
-                }
-            message = '\n'.join(body.values())
+
+            message = f"Name: {name}\n\n Number: {phone_number} \n\n Email: {email} \n\n Post Code: {post_code} \n\n Message: {message}"
 
             email = 'info@founderproperty.co.uk'
 
