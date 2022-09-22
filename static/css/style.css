@@ -374,26 +374,21 @@ nav a:hover {
     padding: 10px 50px;
 }
 
-.arrow_prev {
-    position: relative;
-    top: -181px;
-    right: 37px;
-}
 
 .arrow_prev span {
-    font-size: 25px;
+    font-size: 33px;
     color: #f35f1b;
-}
-
-.arrow_next {
-    position: relative;
-    top: -218px;
-    left: 1313px;
 }
 
 .arrow_next span {
-    font-size: 25px;
+    font-size: 33px;
     color: #f35f1b;
+}
+
+.arrows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .item {
@@ -785,6 +780,10 @@ nav a:hover {
 
     .intro h3 {
         font-size: 20px;
+    }
+
+    .arrows {
+        display: none;
     }
 }
 
