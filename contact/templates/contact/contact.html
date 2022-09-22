@@ -33,9 +33,21 @@
     </div>
 </section>
 
+<div class="container">
+    {% for msg in messages %}
+    <div class="alert alert-success alert-dismissible fade show text-center" role="alert" id="alert">
+        
+            <strong>Thank You!</strong> {{ msg }}
+            
+        
+        <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+</div>
+
+
 <section>
     <div class="container">
-
             <div class="row contact-section ml-1 mr-1">
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <img src="{% static 'media/logo-service.jpg' %}" alt="image of logo and list of services"
