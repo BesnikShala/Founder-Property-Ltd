@@ -6,5 +6,5 @@ class Customer(models.Model):
     email = models.EmailField(blank=True)
     phone_number = models.CharField(max_length=20, null=False, blank=False)
     post_code = models.CharField(max_length=20, null=True, blank=True)
-    message = models.TextField(max_length=350)
+    message = models.TextField(max_length=1000)
 

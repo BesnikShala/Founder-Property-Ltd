@@ -42,7 +42,7 @@
 </div>
 
 
-<section>
+<section class="cont-sect">
     <div class="container">
             <div class="row contact-section ml-1 mr-1">
                 <div class="col-sm-12 col-md-6 col-lg-4">
@@ -50,7 +50,7 @@
                         class="contact-image">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
-                    <p class="text-muted text-center">Please fill in the form to make an enquiry</p>
+                    <p class="text-center">Please fill in the form to make an enquiry</p>
                     <form action="{% url 'contact' %}" method="POST" id="contact-form">
                         {% csrf_token %}
                         <fieldset class="rounded px-3 mb-5">
@@ -74,8 +74,8 @@
                     </form>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4 contact-text">
-                    <h4>Feel Free To Contact Us</h4>
-                    <h5>Either Directly or via our Enquiry Form</h5>
+                    <h3>Feel Free To Contact Us</h3>
+                    <h4>Either Directly or via our Enquiry Form</h4>
                 </div>
             </div>
     </div>

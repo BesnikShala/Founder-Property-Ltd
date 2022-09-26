@@ -441,6 +441,10 @@ nav a:hover {
     color: #bbbbbb;
 }
 
+.footer ion-icon {
+    margin-left: 16px;
+}
+
 .footer a:hover {
     color: #f35f1b;
 }
@@ -695,19 +699,26 @@ nav a:hover {
     width: 100%;
 }
 
+.contact-section p {
+    font-size: 20px;
+}
+
 .contact-image {
     width: 80%;
     margin-left: 35px;
     margin-bottom: 20px;
-    height: auto;
+    margin-top: 35px;
 }
 
-.contact-text > * {
+.contact-text {
+    max-width: 500px;
+    margin: auto;
     text-align: center;
-
 }
 
-
+.cont-sect {
+    background-color: #f7f7f7;
+}
 
 .text-field textarea{
     height: 170px;
