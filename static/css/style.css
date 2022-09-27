@@ -22,6 +22,7 @@ a:hover {
     align-items: center;
     justify-content: space-around;
     background: #f35f1b;
+    padding-top: 3px;
 }
 
 .top-bar span {
@@ -118,6 +119,10 @@ nav a:hover {
     display: none;
 }
 
+.toggle ion-icon {
+    font-size: 42px;
+}
+
 /* Banners */
 
 .banner::after {
@@ -158,13 +163,13 @@ nav a:hover {
     color: #ffff;
     font-size: 3vw;
     font-weight: 400;
-    padding: 28px;
 }
 
 .sub-heading {
     position: relative;
     font-size: 25px;
     color: #ffff;
+    padding-left: 0px;
 }
 
 .banner span {
@@ -252,42 +257,6 @@ nav a:hover {
 
 /* Services Page */
 
-.cromwell-img {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    position: relative;
-    margin-top: 20px;
-    vertical-align: middle;
-}
-
-.cromwell-img p {
-    display: inline;
-}
-
-.cromwell-img2 {
-    width: 100%;
-    height: 400px;
-    text-align: center;
-    position: relative;
-}
-
-.cromwell div p {
-    display: inline-block;
-    border: 1px solid;
-    padding: 10px;
-    box-shadow: 3px 8px 8px #7c7c7c, 17px 12px 8px #e7e7e7, 18px 20px 8px #d7dcd7;
-    margin: 20px;
-    margin-top: 142px;
-
-}
-
-.cromwell div h3 {
-    margin: auto;
-    text-align: center;
-    overflow: hidden;
-}
-
 .hide {
     display: none;
 }
@@ -349,11 +318,6 @@ nav a:hover {
 }
 
 /* Latest Projects */
-
-.latest-project {
-    margin-top: 20px;
-    padding-top: 40px;
-}
 
 .slider {
     background-color: #eaeaea;
@@ -485,6 +449,11 @@ nav a:hover {
     width: 80px;
 }
 
+.rights {
+    color: #bbbbbb;
+    text-align: center;
+}
+
 /* Services */
 
 .service-para::after {
@@ -591,7 +560,6 @@ nav a:hover {
     top: 50px;
 }
 
-
 .detail-list::marker {
     padding-left: 5px;
     list-style-image: url(/static/media/ham.jpg);
@@ -600,7 +568,6 @@ nav a:hover {
 .detail-list li ::marker{
     padding: 2px 5px;
 }
-
 
 .project-img img {
     width: 100%;
@@ -669,6 +636,18 @@ nav a:hover {
     opacity: 1;
 }
 
+.card-title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 3px;
+}
+
+.card .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Contact */
 
@@ -730,7 +709,17 @@ nav a:hover {
     nav {
         display: block;
         position: relative;
-        padding: 15px 20px;
+    }
+
+    .sub-heading {
+        position: relative;
+        font-size: 18px;
+        color: #ffff;
+    }
+
+    .logo img {
+        width: 75px;
+        margin-left: 0px;
     }
 
     .menu {
@@ -758,24 +747,9 @@ nav a:hover {
         height: 415px;
     }
 
-    .cromwell-img {
-        width: 100%;
-        height: 400px;
-        text-align: center;
-        position: relative;
-        margin-top: 20px;
-        left: 0;
-        order: 2;
-    }
-
-    .cromwell-img-2 {
-        width: 100%;
-        height: 400px;
-        text-align: center;
-        position: relative;
-        margin-top: 20px;
-        left: 0;
-        order: 2;
+    .slick-slide img {
+        display: block;
+        height: 264px;
     }
 
     .info img {
@@ -783,15 +757,6 @@ nav a:hover {
         height: 100%;
         text-align: center; 
         position: relative;
-    }
-
-    .cromwell div p {
-        margin: auto;
-        padding: 5px 8px;
-        text-align: left;
-        line-height: 30px;
-        overflow: hidden;
-        order: 2;
     }
 
     .arrows {

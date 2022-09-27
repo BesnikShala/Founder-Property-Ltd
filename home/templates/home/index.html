@@ -19,28 +19,31 @@
 <!-- About Section -->
 <section>
     <div class="container">
-        <div class="row">
-            <div class="row about">
-                <div class="col-md-6 col-sm-12 about-img">
-                    <img src="{% static 'media/logo1.jpg' %}" alt="Company Logo">
-                </div>
-                <div class="col-md-6 col-sm-12 about-text">
-                    <h3>
-                        About Us
-                    </h3>
-                    <p>Here at Founder Property we have a great team with
-                        a combined construction experience of over 20
-                        years. We have a portfolio of over 10 properties of which all have been renovated to a
-                        high standard. We are looking to expand this portfolio and bring onboard new investors to reach the maximum potential of the current market.
-                    </p>
-                    <p data-aos="fade-up" data-aos-duration="1500">
-                        We also offer a unique approach to anyone thinking of carrying out a loft conversion,
-                        house extension or renovation. We have a dedicated construction team who specialises in high-end
-                        conversions, we
-                        are able to draw on our years of experience and knowledge and guide our customers, correctly and
-                        efficiently throughout the whole process of converting their homes.
-                    </p>
-                </div>
+        <div class="row about">
+            <div class="col-md-4 col-sm-12 about-img">
+                <img src="{% static 'media/logo1.jpg' %}" alt="Company Logo">
+            </div>
+            <div class="col-md-8 col-sm-12 about-text">
+                <h3>
+                    About Us
+                </h3>
+                <p>Here at Founder Property we have a great team with
+                    a combined construction experience of over 20
+                    years. We have a portfolio of over 10 properties of which all have been renovated to
+                    a
+                    high standard. We are looking to expand this portfolio and bring onboard new
+                    investors to reach the maximum potential of the current market.
+                </p>
+                <p data-aos="fade-up" data-aos-duration="1500">
+                    We also offer a unique approach to anyone thinking of carrying out a loft
+                    conversion,
+                    house extension or renovation. We have a dedicated construction team who specialises
+                    in high-end
+                    conversions, we
+                    are able to draw on our years of experience and knowledge and guide our customers,
+                    correctly and
+                    efficiently throughout the whole process of converting their homes.
+                </p>
             </div>
         </div>
     </div>
@@ -94,7 +97,7 @@
 
 <section class="slider">
     <div class="container project-tile">
-        
+
         <div class="row latest-project">
             {% for project in projects %}
                 <div class="item col-lg-4 col-md-6 img-wrapper">
