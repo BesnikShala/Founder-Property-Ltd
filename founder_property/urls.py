@@ -25,3 +25,6 @@ urlpatterns = [
     path('projects/', include('projects.urls')),
     path('contact/', include('contact.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+handler404 = 'home.views.error_404'

@@ -14,14 +14,7 @@ def index(request):
     return render(request, 'home/index.html', context)
 
 
+def error_404(request, exception):
+    """ A view to return the 404 page """
 
-def all_projects(request):
-    """A view to see all projects"""
-
-    projects = Project.objects.all()
-
-    context = {
-        'projects': projects,
-    }
-
-    return render(request, 'projects/projects.html', context)
+    return render(request, '404.html')
