@@ -255,6 +255,23 @@ nav a:hover {
     font-size: 30px;
 }
 
+.info h3 {
+    position: relative;
+    color: #222;
+}
+
+.info h3::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    align-content: center;
+    background-color: #e95f1b;
+    height: 2px;
+    box-sizing: border-box;
+    width: 125px;
+}
+
 /* Services Page */
 
 .hide {

@@ -14,71 +14,6 @@
     </div>
 </div>
 
-<section>
-    <div class="container">
-        <hr>
-        <div class="intro">
-            <h3>What We Offer</h3>
-            <p>
-                We have a knack for identifying suitable land with potential, we then secure planning to build wonderful
-                homes. We strive to deliver a service which not only provides more housing but also transform land to
-                fit the surrounding area and turn it into a wonderful space.
-            </p>
-        </div>
-        <hr>
-    </div>
-</section>
-
-<section class="serv-section">
-    <div class="container">
-        <div class="card">
-            <div>
-                <h5 class="card-title">Before</h5>
-            </div>
-            <div class="row g-0">
-                <div class="col-md-3 offset-md-1">
-                    <img src="{% static 'media/cromwell-before.jpg' %}" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <p class="text-center">Cromwell Road project, a semi-detatched house we spotted with great
-                            potential
-                            for
-                            growth. We
-                            secured
-                            the property and worked on planning for a side, rear and loft extensions. The house was
-                            completely
-                            gutted and rebuilt from the bottom up. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <hr>
-        <br>
-        <div class="card">
-            <div>
-                <h5 class="card-title">After</h5>
-            </div>
-            <div class="row g-0 d-flex">
-                <div class="col-md-8 ">
-                    <div class="card-body">
-                        <p class="text-center">We completely transformed this end of terrance house which is now barely
-                            recognisable. We installed
-                            three large flat skylights in the six meter rear extension, which were complimented by a
-                            five meter
-                            aluminium bifolding doors. This brought in that much needed light and view into the
-                            property. The
-                            living room now opens up into a large open-space kitchen/diner. </p>
-                    </div>
-                </div>
-                <div class="col-md-3 ">
-                    <img src="{% static 'media/cromwell-after.jpg' %}" class="img-fluid rounded-end" alt="...">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section>
     <div class="container">
@@ -86,7 +21,9 @@
         <div class="intro">
             <h3>Our Building Services</h3>
             <p>
-                We provide private building services for residential and commercial properties. Please see below from
+                We provide both residential and commercial building services. We also work with investors for land
+                aquistion to develop properties from scratch, if you are interested in investing with us please get in
+                touch. Please see below from
                 the list of work that we offer.
             </p>
         </div>
@@ -102,16 +39,19 @@
                     <li class="active-btn" onclick="showInfo(0, 'info')">
                         <button>Refrubishments</button>
                     </li>
-                    <li class="" onclick="showInfo(1)">
+                    <li onclick="showInfo(1)">
                         <button>Extensions</button>
                     </li>
-                    <li class="" onclick="showInfo(2)">
+                    <li onclick="showInfo(2)">
+                        <button>Carpentry</button>
+                    </li>
+                    <li onclick="showInfo(3)">
                         <button>Loft Conversions</button>
                     </li>
-                    <li class="" onclick="showInfo(3)">
+                    <li onclick="showInfo(4)">
                         <button>Chimney Removals</button>
                     </li>
-                    <li class="" onclick="showInfo(4)">
+                    <li onclick="showInfo(5)">
                         <button>Waste Removals</button>
                     </li>
                 </ul>
@@ -119,12 +59,12 @@
             <div class="col-md-7 col-sm-12 offset-md-1">
                 <div class="info">
                     <div>
-                        <img src="{% static 'media/refurbishment.jpg' %}" class="img-fluid" alt="">
+                        <img src="{% static 'media/refurbishment.jpg' %}" class="img-fluid" alt="Refurb image">
                     </div>
                     <h3>Refrubishments</h3>
                     <div>
-                        <p>At Founder Property we do both itnernal and external refuirbishments ranging from gutting and
-                            remodeling internally to painting and rendering externally. </p>
+                        <p>At Founder Property we do both internal and external refurbishments. We specialise in
+                            completely gutting out traditional victorian houses and making new from the ground up.</p>
                         <ul>
                             <li>Plastering</li>
                             <li>Painting</li>
@@ -133,12 +73,13 @@
                             <li>Spotlights</li>
                             <li>Rewiring</li>
                         </ul>
-                        <a href="{% url 'contact' %}" class="btn btn-large">Request a Quote</a>
+                        <a href="{% url 'contact' %}" class="btn btn-large">Make an
+                            Enquiry</a>
                     </div>
                 </div>
                 <div class="info hide">
                     <div>
-                        <img src="{% static 'media/extension.jpg' %}" class="img-fluid" alt="">
+                        <img src="{% static 'media/extension.jpg' %}" class="img-fluid" alt="Extension image">
                     </div>
                     <h3>Extensions</h3>
                     <div>
@@ -152,12 +93,34 @@
                             <li>Dream Kitchens</li>
                             <li>Resale Value</li>
                         </ul>
-                        <a href="{% url 'contact' %}" class="btn btn-large">Request a Quote</a>
+                        <a href="{% url 'contact' %}" class="btn btn-large">Make an
+                            Enquiry</a>
                     </div>
                 </div>
                 <div class="info hide">
                     <div>
-                        <img src="{% static 'media/loft.jpg' %}" class="img-fluid" alt="">
+                        <img src="{% static 'media/stud-wall.jpeg' %}" class="img-fluid" alt="Carpentry image">
+                    </div>
+                    <h3>Carpentry</h3>
+                    <div>
+                        <p>Wood is one of the most important materials when building, we do all aspects of woodwork
+                            ranging from first fix to ktichens and flooring. To find out more get in touch.</p>
+                        <ul>
+                            <li>1st & 2nd Fix</li>
+                            <li>Flooring</li>
+                            <li>Roofing</li>
+                            <li>Stairs</li>
+                            <li>Kitchens</li>
+                            <li>Facias & Soffits</li>
+                            <li>Skirting</li>
+                        </ul>
+                        <a href="{% url 'contact' %}" class="btn btn-large">Make an
+                            Enquiry</a>
+                    </div>
+                </div>
+                <div class="info hide">
+                    <div>
+                        <img src="{% static 'media/loft.jpg' %}" class="img-fluid" alt="Loft image2">
                     </div>
                     <h3>Loft Conversion</h3>
                     <div>
@@ -165,40 +128,41 @@
                             needed toilet/shower upstairs. </p>
                         <ul>
                             <li>Loft Extension/Conversion</li>
-                            <li>Additional Bathroom/en-suite</li>
-                            <li>Additional Bedroom</li>
-                            <li>Resale Value</li>
+                            <li>Bathroom/en-suite</li>
+                            <li>Wall Partioning</li>
+                            <li>Staircases</li>
                             <li>Velux Skylights</li>
-                            <li>Storage</li>
+                            <li>Storage & Wardrobes</li>
                         </ul>
-                        <a href="{% url 'contact' %}" class="btn btn-large">Request a Quote</a>
+                        <a href="{% url 'contact' %}" class="btn btn-large">Make an
+                            Enquiry</a>
                     </div>
                 </div>
                 <div class="info hide">
                     <div>
-                        <img src="{% static 'media/chimney.jpg' %}" class="img-fluid" alt="">
+                        <img src="{% static 'media/chimney.jpg' %}" class="img-fluid" alt="Chimney image">
                     </div>
                     <h3>Chimney Removals</h3>
                     <div>
-                        <p>We have vast experience in loft extensions, when you need that extra spare bedroom or that
-                            needed toilet/shower upstairs. </p>
+                        <p>Chimney removal brings more space and modern feel to obsolete and unused chimey breasts. You can benefit from better insulation and waterproofing, call today for a quotation.</p>
                         <ul>
-                            <li>More Space</li>
-                            <li>Modern Feel</li>
-                            <li>Better Insulation</li>
-                            <li>Plaster and Paint Finish</li>
                             <li>Top to bottom removal</li>
+                            <li>Steels and Bracing</li>
+                            <li>Roof Repair</li>
+                            <li>Insulation</li>
+                            <li>Plaster and Paint Finish</li>
                         </ul>
-                        <a href="{% url 'contact' %}" class="btn btn-large">Request a Quote</a>
+                        <a href="{% url 'contact' %}" class="btn btn-large">Make an
+                            Enquiry</a>
                     </div>
                 </div>
                 <div class="info hide">
                     <div>
-                        <img src="{% static 'media/waste.jpg' %}" class="img-fluid" alt="">
+                        <img src="{% static 'media/waste.jpg' %}" class="img-fluid" alt="Waste image">
                     </div>
                     <h3>Waste Removals</h3>
                     <div>
-                        <p>Our waste removal service is quick and easy. Call now to check availability.  </p>
+                        <p>Our waste removal service is quick and easy. Call now to check availability and pricing. </p>
                         <ul>
                             <li>Furniture</li>
                             <li>Building Waste</li>
@@ -206,7 +170,8 @@
                             <li>Bricks and Rubble</li>
                             <li>Garden Waste</li>
                         </ul>
-                        <a href="{% url 'contact' %}" class="btn btn-large">Request a Quote</a>
+                        <a href="{% url 'contact' %}" class="btn btn-large">Make an
+                            Enquiry</a>
                     </div>
                 </div>
             </div>
