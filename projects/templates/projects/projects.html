@@ -35,7 +35,7 @@
             {% for project in projects %}
             <div class="col-lg-4 col-md-6 img-wrapper">
                 <a href="{% url 'project_detail' project.id %}" class="view">
-                    <img src="{{ project.image.url }}" alt="{{ project.name }}">
+                    <img src="{{ project.image.url|lower }}" alt="{{ project.name }}">
                 </a>
             </div> 
             {% endfor %}
