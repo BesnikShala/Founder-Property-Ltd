@@ -14,7 +14,13 @@ def index(request):
     return render(request, 'home/index.html', context)
 
 
-def error_404(request, exception):
+def error_404(request, exception=None):
     """ A view to return the 404 page """
 
-    return render(request, 'templates/404.html')
+    return render(request, 'home.404.html', status=404)
+
+
+def error_500(request, exception=None):
+    """ A view to return the 404 page """
+
+    return render(request, 'home/500.html')

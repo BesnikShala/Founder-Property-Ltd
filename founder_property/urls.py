@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
+from home import views
 from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('home.urls')),
+    path('home/', include('founder_property.urls')),
     path('services/', include('services.urls')),
     path('projects/', include('projects.urls')),
     path('contact/', include('contact.urls')),
@@ -29,3 +30,4 @@ urlpatterns = [
 
 
 handler404 = 'home.views.error_404'
+handler500 = 'home.views.error_404'
