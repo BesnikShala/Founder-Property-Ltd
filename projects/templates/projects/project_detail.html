@@ -20,7 +20,8 @@
                 </div>
                 <div class="popup-gallery">
                     {% if project.image1 %}
-                        <a href="{{ project.image1.url }}" ><img src="{{ project.image1.url }}"></a>
+                        <a href="{{ project.image1.url }}"><img src="{{ project.image1.url }}"
+                                class="card-img-top img-fluid"></a>
                     {% else %}
                         <a href="">
                             <img src="{{ MEDIA_URL }}" display="none" alt="{{ project.name }}"
@@ -28,7 +29,8 @@
                         </a>
                     {% endif %}
                     {% if project.image2 %}
-                        <a href="{{ project.image2.url }}" ><img src="{{ project.image2.url }}"></a>
+                        <a href="{{ project.image2.url }}"><img src="{{ project.image2.url }}"
+                                class="card-img-top img-fluid"></a>
                     {% else %}
                     <a href="">
                         <img src="{{ MEDIA_URL }}" display="none" alt="{{ project.name }}"
@@ -36,7 +38,8 @@
                     </a>
                     {% endif %}
                     {% if project.image3 %}
-                    <a href="{{ project.image3.url }}" ><img src="{{ project.image3.url }}"></a>
+                    <a href="{{ project.image3.url }}"><img src="{{ project.image3.url }}"
+                            class="card-img-top img-fluid"></a>
                     {% else %}
                     <a href="">
                         <img src="{{ MEDIA_URL }}" alt="{{ project.name }}"
@@ -44,7 +47,8 @@
                     </a>
                     {% endif %}
                     {% if project.image4 %}
-                    <a href="{{ project.image4.url }}" ><img src="{{ project.image4.url }}"></a>
+                    <a href="{{ project.image4.url }}"><img src="{{ project.image4.url }}"
+                            class="card-img-top img-fluid"></a>
                     {% else %}
                     <a href="">
                         <img src="{{ MEDIA_URL }}" alt="{{ project.name }}"
@@ -52,7 +56,8 @@
                     </a>
                     {% endif %}
                     {% if project.image5 %}
-                    <a href="{{ project.image5.url }}" ><img src="{{ project.image5.url }}"></a>
+                    <a href="{{ project.image5.url }}"><img src="{{ project.image5.url }}"
+                            class="card-img-top img-fluid"></a>
                     {% else %}
                     <a href="">
                         <img src="{{ MEDIA_URL }}" alt="{{ project.name }}"
@@ -60,7 +65,8 @@
                     </a>
                     {% endif %}
                     {% if project.image6 %}
-                    <a href="{{ project.image6.url }}" ><img src="{{ project.image6.url }}"></a>
+                    <a href="{{ project.image6.url }}"><img src="{{ project.image6.url }}" class="card-img-top
+                            img-fluid"></a>
                     {% else %}
                     <a href="">
                         <img src="{{ MEDIA_URL }}" alt="{{ project.name }}"
@@ -68,7 +74,8 @@
                     </a>
                     {% endif %}
                     {% if project.image7 %}
-                    <a href="{{ project.image7.url }}" ><img src="{{ project.image7.url }}"></a>
+                    <a href="{{ project.image7.url }}"><img src="{{ project.image7.url }}"
+                            class="card-img-top img-fluid"></a>
                     {% else %}
                     <a href="">
                         <img src="{{ MEDIA_URL }}" alt="{{ project.name }}"
@@ -143,7 +150,7 @@
             </div>
             <div class="col-md-4 col-sm-12">
                 <div class="project-details">
-                    <h5>Project Details</h5>
+                    <h4>Project Details</h4>
                     <p>{{ project.description }}</p>
                     <ul class="detail-list">
                         {% if project.job_details %}

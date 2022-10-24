@@ -17,13 +17,15 @@
     <div class="container">
         <hr>
         <div class="row">
-        <div class="intro col-md-12">
-            <h3>Our Work</h3>
-            <p>Please see the previous projects that we have worked on. Here you can click on a project to see more
-                information. We have tried to mix before and after images so you can get a true sense of the quality of
-                work that we provide. Each project shows images as well as information about the project and the works
-                carried out. </p>
-        </div>
+            <div class="intro col-md-12">
+                <h3>Our Work</h3>
+                <p>Please see the previous projects that we have worked on. Here you can click on a project to see more
+                    information. We have tried to mix before and after images so you can get a true sense of the quality
+                    of
+                    work that we provide. Each project shows images as well as information about the project and the
+                    works
+                    carried out. </p>
+            </div>
         </div>
         <hr>
     </div>
@@ -31,13 +33,13 @@
 
 <section>
     <div class="container project-tile">
-        <div class="row view">
+        <div class="row">
             {% for project in projects %}
-            <div class="col-lg-4 col-md-6 img-wrapper">
-                <a href="{% url 'project_detail' project.id %}" class="view">
-                    <img src="{{ project.image.url|lower }}" alt="{{ project.name }}">
-                </a>
-            </div> 
+                <div class="col-lg-4 col-md-6 img-wrapper view project-tile img-fuild">
+                    <a href="{% url 'project_detail' project.id %}">
+                        <img src="{{ project.image.url }}" alt="{{ project.name }}">
+                    </a>
+                </div>
             {% endfor %}
         </div>
     </div>
