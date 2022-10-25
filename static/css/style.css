@@ -76,7 +76,7 @@ nav a:hover {
     flex: 1;
     text-align: center;
     position: relative;
-    left: 70px;
+    left: 47px;
     bottom: 10px;
     font-size: 35px;
     font-weight: 800;
@@ -179,12 +179,25 @@ nav a:hover {
 
 .carousel-item{
     height: 80vh;
-    background: no-repeat scroll bottom-center scroll;
+    background: no-repeat scroll bottom scroll;
+    background-position: bottom center;
     background-size: cover;
 }
 
-.active img {
-    background-position: center bottom;
+.carousel-img {
+    background-image: url(/static/media/investor.jpeg);
+    width: 100%;
+    background-position: center center;
+}
+
+.carousel-img2 {
+    background-image: url(/static/media/residential.jpeg);
+    width: 100%;
+}
+
+.carousel-img3 {
+    background-image: url(/static/media/engineer.jpeg);
+    width: 100%;
 }
 
 .carousel-item::before {
@@ -196,7 +209,7 @@ nav a:hover {
     bottom: 0;
     right: 0;
     background-color: #222;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 .carousel-caption {
@@ -207,11 +220,14 @@ nav a:hover {
 .carousel-caption h5 {
     font-size: 8vh;
     font-weight: 700;
+    position: relative;
+    bottom: 20px;
 }
 
 .carousel-caption p {
     font-size: 18px;
-    top: 2rem;
+    position: relative;
+    bottom: 20px;
 }
 /* About */
 
@@ -336,6 +352,7 @@ nav a:hover {
     margin-left: 65px;
 }
 
+/* make enquiry buttons */
 .info a {
     margin-left: 59px;
     margin-bottom: 50px;
@@ -343,8 +360,10 @@ nav a:hover {
     background-color: #f35f1beb;
 }
 
+
 .tab ul li button:hover {
     color: #f35f1b;
+    transition: ease-in 1s;
 }
 
 .tab ul {
@@ -645,6 +664,35 @@ nav a:hover {
     color: #f7f7f7
 }
 
+.project-tile {
+    position: relative;
+    cursor: pointer;
+}
+
+.project-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(57, 57, 57, 0.502);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    font-family: 'Lato';
+    /* center overlay text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-tile a:hover .project-overlay {
+    transform: scale(1.3);
+}
+
 .project-tile img {
     width: 300px;
     height: 300px;
@@ -815,14 +863,38 @@ nav a:hover {
         margin-bottom: 20px;
     }
 
-    .carousel-item {
-        height: 100vh;
-        background: no-repeat scroll bottom-center scroll;
-        background-size: cover;
+    .carousel-item a {
+        position: relative;
     }
 
 }
 
+@media screen and (max-width: 1000px) {
+    .title {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 2500px) and (min-width: 800px) {
+    .carousel-caption h5 {
+        font-size: 8vh;
+        font-weight: 700;
+        position: relative;
+        bottom: 150px;
+    }
+
+    .carousel-caption p {
+        font-size: 3vh;
+        position: relative;
+        bottom: 140px;
+    }
+
+    .carousel-item a {
+        position: relative;
+        bottom: 130px;
+    }
+
+}
 
 @media screen and (max-width: 800px) {
     .title {
@@ -864,18 +936,26 @@ nav a:hover {
 
     .carousel-item {
         width: 100%;
-        height: 100%;
         background: no-repeat scroll bottom-center scroll;
         background-size: cover;
+        height: 400px;
     }
 
     .carousel-caption h5 {
-        font-size: 8vh;
+        font-size: 5vh;
         font-weight: 700;
+        position: relative;
+        bottom: 20px;
     }
 
     .carousel-caption p {
         font-size: 14px;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .carousel-item a {
+        position: relative;
     }
 
     .carousel-caption {
@@ -883,8 +963,7 @@ nav a:hover {
     }
 
     .carousel-item img {
-        max-height: 300px;
-        width: 100%;
+        max-height: 500px;
     }
 
 }

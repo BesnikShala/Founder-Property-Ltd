@@ -38,6 +38,7 @@
                 <div class="col-lg-4 col-md-6 img-wrapper view project-tile img-fuild">
                     <a href="{% url 'project_detail' project.id %}">
                         <img src="{{ project.image.url }}" alt="{{ project.name }}">
+                        <div class="project-overlay"><span>{{ project.name }}</span></div>
                     </a>
                 </div>
             {% endfor %}
