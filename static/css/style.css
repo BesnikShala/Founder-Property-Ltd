@@ -70,7 +70,6 @@ nav a:hover {
 
 .logo {
     margin: 10px;
-    width: 30px;
 }
 
 .title {
@@ -818,11 +817,11 @@ nav a:hover {
         display: flex;
         align-items: center;
         font-size: 20px;
-        width: 30px;
     }
 
-    .toggle a {
-        z-index: 9999;
+    .logo {
+        margin: 10px;
+        width: 223px;
     }
 
     .menu {
@@ -881,11 +880,6 @@ nav a:hover {
 
 }
 
-@media screen and (max-width: 1000px) {
-    .title {
-        display: none;
-    }
-}
 
 @media screen and (max-width: 2500px) and (min-width: 800px) {
     .carousel-caption h5 {
