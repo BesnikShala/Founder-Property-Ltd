@@ -70,6 +70,7 @@ nav a:hover {
 
 .logo {
     margin: 10px;
+    width: 30px;
 }
 
 .title {
@@ -88,7 +89,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     font-size: 20px;
-
+    flex-wrap: wrap;
 }
 
 .logo a:hover {
@@ -811,6 +812,17 @@ nav a:hover {
     .logo img {
         width: 75px;
         margin-left: 0px;
+    }
+
+    .logo a {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        width: 30px;
+    }
+
+    .toggle a {
+        z-index: 9999;
     }
 
     .menu {
