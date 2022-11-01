@@ -718,6 +718,7 @@ nav a:hover {
 
 .popup-gallery a img {
     padding: 10px 0px;
+    height: 250px;
 }
 
 .img-wrapper {
@@ -842,11 +843,6 @@ nav a:hover {
         display: none;
     }
 
-    .project-tile img {
-        width: fit-content;
-        height: 415px;
-    }
-
     .slick-slide img {
         display: block;
         height: 419px;
@@ -877,7 +873,10 @@ nav a:hover {
         position: relative;
     }
 
-
+    .popup-gallery a img {
+        padding: 10px 0px;
+        height: 250px;
+    }
 
 }
 
@@ -909,8 +908,8 @@ nav a:hover {
     }
 
     .popup-gallery a img {
-        width: 95%;
-        margin: 10px px;
+        padding: 10px 0px;
+        height: 250px;
     }
 
 }

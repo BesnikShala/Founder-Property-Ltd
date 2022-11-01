@@ -35,7 +35,7 @@
     <div class="container project-tile">
         <div class="row">
             {% for project in projects %}
-                <div class="col-lg-4 col-md-6 img-wrapper view project-tile img-fuild">
+                <div class="col-lg-4 col-md-6 img-wrapper view ">
                     <a href="{% url 'project_detail' project.id %}">
                         <img src="{{ project.image.url }}" alt="{{ project.name }}">
                         <div class="project-overlay"><span>{{ project.name }}</span></div>
