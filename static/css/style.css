@@ -80,7 +80,7 @@ nav a:hover {
     bottom: 10px;
     font-size: 35px;
     font-weight: 800;
-    color: rgb(233, 25, 25);
+    color: #fff;
     font-family: 'Playfair Display', sans-serif;
 }
 
@@ -717,9 +717,7 @@ nav a:hover {
 }
 
 .popup-gallery a img {
-    height: 234px;
-    width: 222px;
-    margin: 10px;
+    padding: 10px 0px;
 }
 
 .img-wrapper {

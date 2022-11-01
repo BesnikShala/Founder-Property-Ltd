@@ -12,25 +12,29 @@
 </section>
 
 <section>
-    <div class="container ">
+    <div class="container">
         <div class="row">
             <div class="col-md-8">
                 <div class="project-img img-fluid">
                     <img src="{{ project.image.url }}" alt="{{ project.name }}">
                 </div>
-                <div class="popup-gallery">
+                <div class="popup-gallery row">
                     {% if project.image1 %}
+                    <div class="col-md-4 col-sm-6 col-lg-3">
                         <a href="{{ project.image1.url }}"><img src="{{ project.image1.url }}"
                                 class="card-img-top img-fluid"></a>
+                    </div>
                     {% else %}
-                        <a href="">
-                            <img src="{{ MEDIA_URL }}" display="none" alt="{{ project.name }}"
-                                class="d-none card-img-top img-fluid">
-                        </a>
+                    <a href="">
+                        <img src="{{ MEDIA_URL }}" display="none" alt="{{ project.name }}"
+                            class="d-none card-img-top img-fluid">
+                    </a>
                     {% endif %}
                     {% if project.image2 %}
+                    <div class="col-md-4 col-sm-6 col-lg-3">
                         <a href="{{ project.image2.url }}"><img src="{{ project.image2.url }}"
                                 class="card-img-top img-fluid"></a>
+                    </div>
                     {% else %}
                     <a href="">
                         <img src="{{ MEDIA_URL }}" display="none" alt="{{ project.name }}"
@@ -38,112 +42,133 @@
                     </a>
                     {% endif %}
                     {% if project.image3 %}
-                    <a href="{{ project.image3.url }}"><img src="{{ project.image3.url }}"
-                            class="card-img-top img-fluid"></a>
+                    <div class="col-md-4 col-sm-6 col-lg-3">
+                        <a href="{{ project.image3.url }}"><img src="{{ project.image3.url }}"
+                                class="card-img-top img-fluid"></a>
+                    </div>
                     {% else %}
                     <a href="">
-                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}"
-                            class="d-none card-img-top img-fluid">
+                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}" class="d-none card-img-top img-fluid">
                     </a>
                     {% endif %}
                     {% if project.image4 %}
-                    <a href="{{ project.image4.url }}"><img src="{{ project.image4.url }}"
-                            class="card-img-top img-fluid"></a>
+                    <div class="col-md-4 col-sm-6 col-lg-3">
+                        <a href="{{ project.image4.url }}"><img src="{{ project.image4.url }}"
+                                class="card-img-top img-fluid"></a>
+                    </div>
                     {% else %}
                     <a href="">
-                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}"
-                            class="d-none card-img-top img-fluid">
+                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}" class="d-none card-img-top img-fluid">
                     </a>
                     {% endif %}
                     {% if project.image5 %}
-                    <a href="{{ project.image5.url }}"><img src="{{ project.image5.url }}"
-                            class="card-img-top img-fluid"></a>
+                    <div class="col-md-4 col-sm-6 col-lg-3">
+                        <a href="{{ project.image5.url }}"><img src="{{ project.image5.url }}"
+                                class="card-img-top img-fluid"></a>
+                    </div>
                     {% else %}
                     <a href="">
-                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}"
-                            class="d-none card-img-top img-fluid">
+                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}" class="d-none card-img-top img-fluid">
                     </a>
                     {% endif %}
                     {% if project.image6 %}
-                    <a href="{{ project.image6.url }}"><img src="{{ project.image6.url }}" class="card-img-top
-                            img-fluid"></a>
+                    <div class="col-md-4 col-sm-6 col-lg-3">
+                        <a href="{{ project.image6.url }}"><img src="{{ project.image6.url }}"
+                                class="card-img-top img-fluid"></a>
+                    </div>
                     {% else %}
                     <a href="">
-                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}"
-                            class="d-none card-img-top img-fluid">
+                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}" class="d-none card-img-top img-fluid">
                     </a>
                     {% endif %}
                     {% if project.image7 %}
-                    <a href="{{ project.image7.url }}"><img src="{{ project.image7.url }}"
-                            class="card-img-top img-fluid"></a>
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <a href="{{ project.image7.url }}"><img src="{{ project.image7.url }}"
+                                    class="card-img-top img-fluid"></a>
+                        </div>
                     {% else %}
                     <a href="">
-                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}"
-                            class="d-none card-img-top img-fluid">
+                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}" class="d-none card-img-top img-fluid">
                     </a>
                     {% endif %}
                     {% if project.image8 %}
-                    <a href="{{ project.image8.url }}" ><img src="{{ project.image8.url }}"></a>
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <a href="{{ project.image8.url }}"><img src="{{ project.image8.url }}"
+                                    class="card-img-top img-fluid"></a>
+                        </div>
                     {% else %}
                     <a href="">
-                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}"
-                            class="d-none card-img-top img-fluid">
+                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}" class="d-none card-img-top img-fluid">
                     </a>
                     {% endif %}
                     {% if project.image9 %}
-                    <a href="{{ project.image9.url }}" ><img src="{{ project.image9.url }}"></a>
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <a href="{{ project.image9.url }}"><img src="{{ project.image9.url }}"
+                                    class="card-img-top img-fluid"></a>
+                        </div>
                     {% else %}
                     <a href="">
-                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}"
-                            class="d-none card-img-top img-fluid">
+                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}" class="d-none card-img-top img-fluid">
                     </a>
                     {% endif %}
                     {% if project.image10 %}
-                    <a href="{{ project.image10.url }}" ><img src="{{ project.image10.url }}"></a>
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <a href="{{ project.image10.url }}"><img src="{{ project.image10.url }}"
+                                    class="card-img-top img-fluid"></a>
+                        </div>
                     {% else %}
                     <a href="">
-                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}"
-                            class="d-none card-img-top img-fluid">
+                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}" class="d-none card-img-top img-fluid">
                     </a>
                     {% endif %}
                     {% if project.image11 %}
-                    <a href="{{ project.image11.url }}" ><img src="{{ project.image11.url }}"></a>
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <a href="{{ project.image11.url }}"><img src="{{ project.image11.url }}"
+                                    class="card-img-top img-fluid"></a>
+                        </div>
                     {% else %}
                     <a href="">
-                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}"
-                            class="d-none card-img-top img-fluid">
+                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}" class="d-none card-img-top img-fluid">
                     </a>
                     {% endif %}
                     {% if project.image12 %}
-                    <a href="{{ project.image12.url }}" ><img src="{{ project.image12.url }}"></a>
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <a href="{{ project.image12.url }}"><img src="{{ project.image12.url }}"
+                                    class="card-img-top img-fluid"></a>
+                        </div>
                     {% else %}
                     <a href="">
-                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}"
-                            class="d-none card-img-top img-fluid">
+                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}" class="d-none card-img-top img-fluid">
                     </a>
                     {% endif %}
                     {% if project.image13 %}
-                    <a href="{{ project.image13.url }}" ><img src="{{ project.image13.url }}"></a>
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <a href="{{ project.image13.url }}"><img src="{{ project.image13.url }}"
+                                    class="card-img-top img-fluid"></a>
+                        </div>
                     {% else %}
                     <a href="">
-                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}"
-                            class="d-none card-img-top img-fluid">
+                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}" class="d-none card-img-top img-fluid">
                     </a>
                     {% endif %}
                     {% if project.image14 %}
-                    <a href="{{ project.image14.url }}" ><img src="{{ project.image14.url }}"></a>
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <a href="{{ project.image14.url }}"><img src="{{ project.image14.url }}"
+                                    class="card-img-top img-fluid"></a>
+                        </div>
                     {% else %}
                     <a href="">
-                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}"
-                            class="d-none card-img-top img-fluid">
+                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}" class="d-none card-img-top img-fluid">
                     </a>
                     {% endif %}
                     {% if project.image15 %}
-                    <a href="{{ project.image15.url }}" ><img src="{{ project.image15.url }}"></a>
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <a href="{{ project.image15.url }}"><img src="{{ project.image15.url }}"
+                                    class="card-img-top img-fluid"></a>
+                        </div>
                     {% else %}
                     <a href="">
-                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}"
-                            class="d-none card-img-top img-fluid">
+                        <img src="{{ MEDIA_URL }}" alt="{{ project.name }}" class="d-none card-img-top img-fluid">
                     </a>
                     {% endif %}
                 </div>
@@ -154,43 +179,43 @@
                     <p>{{ project.description }}</p>
                     <ul class="detail-list">
                         {% if project.job_details %}
-                            <li>{{ project.job_details }}</li>
+                        <li>{{ project.job_details }}</li>
                         {% endif %}
                         {% if project.job_details1 %}
-                            <li>{{ project.job_details1 }}</li>
+                        <li>{{ project.job_details1 }}</li>
                         {% endif %}
                         {% if project.job_details2 %}
-                            <li>{{ project.job_details2 }}</li>
+                        <li>{{ project.job_details2 }}</li>
                         {% endif %}
                         {% if project.job_details3 %}
-                            <li>{{ project.job_details3 }}</li>
+                        <li>{{ project.job_details3 }}</li>
                         {% endif %}
                         {% if project.job_details4 %}
-                            <li>{{ project.job_details4 }}</li>
+                        <li>{{ project.job_details4 }}</li>
                         {% endif %}
                         {% if project.job_details5 %}
-                            <li>{{ project.job_details5 }}</li>
+                        <li>{{ project.job_details5 }}</li>
                         {% endif %}
                         {% if project.job_details6 %}
-                            <li>{{ project.job_details6 }}</li>
+                        <li>{{ project.job_details6 }}</li>
                         {% endif %}
                         {% if project.job_details7 %}
-                            <li>{{ project.job_details7 }}</li>
+                        <li>{{ project.job_details7 }}</li>
                         {% endif %}
                         {% if project.job_details8 %}
-                            <li>{{ project.job_details8 }}</li>
+                        <li>{{ project.job_details8 }}</li>
                         {% endif %}
                         {% if project.job_details9 %}
-                            <li>{{ project.job_details9 }}</li>
+                        <li>{{ project.job_details9 }}</li>
                         {% endif %}
                         {% if project.job_details10 %}
-                            <li>{{ project.job_details10 }}</li>
+                        <li>{{ project.job_details10 }}</li>
                         {% endif %}
                         {% if project.job_details11 %}
-                            <li>{{ project.job_details11 }}</li>
+                        <li>{{ project.job_details11 }}</li>
                         {% endif %}
                         {% if project.job_details12 %}
-                            <li>{{ project.job_details12 }}</li>
+                        <li>{{ project.job_details12 }}</li>
                         {% endif %}
                     </ul>
                 </div>
