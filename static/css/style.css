@@ -718,7 +718,8 @@ nav a:hover {
 
 .popup-gallery a img {
     padding: 10px 0px;
-    height: 250px;
+    height: 100%;
+    width: 100%;
 }
 
 .img-wrapper {
@@ -875,7 +876,9 @@ nav a:hover {
 
     .popup-gallery a img {
         padding: 10px 0px;
-        height: 250px;
+        height: 100%;
+        width: 100%;
+        padding: 30px;
     }
 
 }
@@ -905,11 +908,6 @@ nav a:hover {
         height: 419px;
         padding: 20px;
         width: 100%;
-    }
-
-    .popup-gallery a img {
-        padding: 10px 0px;
-        height: 250px;
     }
 
 }
@@ -982,11 +980,6 @@ nav a:hover {
 
     .carousel-item img {
         max-height: 500px;
-    }
-
-    .popup-gallery a img {
-        width: 95%;
-        margin: 10px px;
     }
 
 }
