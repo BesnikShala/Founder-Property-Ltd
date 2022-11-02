@@ -80,7 +80,7 @@ nav a:hover {
     bottom: 10px;
     font-size: 35px;
     font-weight: 800;
-    color: #ea0909;
+    color: #f0ebeb;
     font-family: 'Playfair Display', sans-serif;
 }
 
@@ -448,6 +448,34 @@ nav a:hover {
     height: 200px;
 }
 
+.project-details-banner {
+    background-image: url(/static/media/planning.jpeg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.project-details-banner::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    z-index: 0;
+}
+
+.project-details-banner > * {
+    z-index: 10;
+    position: relative;
+}
+
 .discuss {
     text-align: center;
     padding: 5vw;
@@ -570,7 +598,6 @@ nav a:hover {
     text-align: center;
     letter-spacing: 2px;
     font-size: 40px;
-    color: #e95f1b;
 }
 
 .intro > hr {
@@ -719,7 +746,7 @@ nav a:hover {
 
 .popup-gallery a img {
     padding: 10px 0px;
-    height: 100%;
+    height: 270px;
     width: 100%;
 }
 
@@ -981,6 +1008,12 @@ nav a:hover {
 
     .carousel-item img {
         max-height: 500px;
+    }
+
+    .detail-discuss {
+        font-weight: bold;
+        font-size: 25px;
+        padding: 16px;
     }
 
 }
