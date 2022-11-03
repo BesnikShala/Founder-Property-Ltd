@@ -40,40 +40,42 @@
 
 <section class="cont-sect">
     <div class="container">
-            <div class="row contact-section ml-1 mr-1">
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <img src="{% static 'media/logo-service.jpg' %}" alt="image of logo and list of services"
-                        class="contact-image">
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <p class="text-center">Please fill in the form to make an enquiry</p>
-                    <form action="{% url 'contact' %}" method="POST" id="contact-form">
-                        {% csrf_token %}
-                        <fieldset class="rounded px-3 mb-5">
-                            <div class="mb-3">
-                                {{ customer_form.name | as_crispy_field }}
-                            </div>
-                            <div class="mb-3">
-                                {{ customer_form.email | as_crispy_field }}
-                            </div>
-                            <div class="mb-3">
-                                {{ customer_form.phone_number | as_crispy_field }}
-                            </div>
-                            <div class="mb-3">
-                                {{ customer_form.post_code | as_crispy_field }}
-                            </div>
-                            <div class="mb-3 text-field">
-                                {{ customer_form.message | as_crispy_field }}
-                            </div>
-                            <input class="btn btn-primary w-100" type="submit" value="Submit">
-                        </fieldset>
-                    </form>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4 contact-text">
-                    <h3>Feel Free To Contact Us</h3>
-                    <h4>Either Directly or via our Enquiry Form</h4>
+        <div class="row contact-section ml-1 mr-1">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <img src="{% static 'media/logo-service.jpg' %}" alt="image of logo and list of services"
+                    class="contact-image">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <p class="text-center">Please fill in the form to make an enquiry</p>
+                <form action="{% url 'contact' %}" method="POST" id="contact-form">
+                    {% csrf_token %}
+                    <fieldset class="rounded px-3 mb-5">
+                        <div class="mb-3">
+                            {{ customer_form.name | as_crispy_field }}
+                        </div>
+                        <div class="mb-3">
+                            {{ customer_form.email | as_crispy_field }}
+                        </div>
+                        <div class="mb-3">
+                            {{ customer_form.phone_number | as_crispy_field }}
+                        </div>
+                        <div class="mb-3">
+                            {{ customer_form.post_code | as_crispy_field }}
+                        </div>
+                        <div class="mb-3 text-field">
+                            {{ customer_form.message | as_crispy_field }}
+                        </div>
+                        <input class="btn btn-primary w-100" type="submit" value="Submit">
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 contact-img">
+                <div class="contact-text">
+                    <h2>Feel Free To Contact Us</h2>
+                    <h3>Either Directly or via our Enquiry Form</h3>
                 </div>
             </div>
+        </div>
     </div>
 </section>
 
