@@ -34,7 +34,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = os.environ.get('DEBUG')
 
 
-ALLOWED_HOSTS = ['founder-property.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['founder-property.herokuapp.com', 'localhost', 'www.founderproperty.co.uk', 'founderproperty.co.uk']
 
 
 # Application definition
