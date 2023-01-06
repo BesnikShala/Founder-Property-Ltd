@@ -177,7 +177,7 @@ if 'USE_AWS' in os.environ:
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
 
-CSRF_TRUSTED_ORIGINS = ['https://*.example.com', 'https://*.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://*.founderproperty.co.uk', 'https://*.gitpod.io']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
