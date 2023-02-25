@@ -917,10 +917,6 @@ nav a:hover {
         position: relative;
     }
 
-    .arrows {
-        display: none;
-    }
-
     .about-img img {
         width: 80%;
         margin: 20px 0px;
