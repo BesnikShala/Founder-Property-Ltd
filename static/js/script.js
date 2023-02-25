@@ -17,7 +17,9 @@ AOS.init({
     duration: 1000
 });
 
-// Carousel Slider Function
+
+
+// Carousel Slider Function to control Latest Projects 
 $(document).ready(function () {
     $('.latest-project').slick({
         prevArrow: '.arrow_prev',
