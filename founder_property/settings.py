@@ -34,7 +34,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = os.environ.get('DEBUG')
 
 
-ALLOWED_HOSTS = ['founder-property.herokuapp.com', 'web-production-8f1a.up.railway.app', 'localhost', 'http://www.founderproperty.co.uk', 'www.founderproperty.co.uk', 'founderproperty.co.uk']
+ALLOWED_HOSTS = ['founder-property.herokuapp.com', 'web-production-8f1a.up.railway.app', 'localhost', '8000-besnikshala-founderprop-9o07mde2vyh.ws-eu99.gitpod.io', 'http://www.founderproperty.co.uk', 'www.founderproperty.co.uk', 'founderproperty.co.uk']
 
 
 # Application definition
